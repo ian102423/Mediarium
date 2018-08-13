@@ -41,7 +41,7 @@
 }
 
 * {
-  color: rgb(33, 33, 33);
+  color: #270c17;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -59,7 +59,6 @@ body {
   right: 2rem;
   bottom: 1.5rem;
   z-index: 1000;
-  -----
 }
 
 .wrapper {
@@ -72,7 +71,6 @@ body {
   z-index: 1000;
   margin-top: 0.5rem;
   padding: 1rem 0;
-  -----
 }
 
 .wrapper:hover {
@@ -107,7 +105,7 @@ body {
 }
 
 .about {
-  background-color: rgb(241, 241, 241);
+  background-color: rgb(255, 255, 255);
   padding: 3rem 0 8rem 0;
   text-align: -moz-center;
   text-align: -webkit-center;
@@ -143,11 +141,12 @@ body {
 }
 
 .middles-item {
-  color: rgb(255, 255, 255);
-  font-size: 2.8rem;
+  color: #fff;
+  font-size: 2.3rem;
   max-width: 39rem;
   margin: auto;
-  padding: 0 1rem;
+  padding: 1rem 1rem;
+  text-shadow: -1px -1px #000, 3px -1px #000, -3px 1px #000, 3px 1px #000;
 }
 
 .contact-item-group {
@@ -203,7 +202,6 @@ body {
 
 .service {
   background: url(../images/background1.jpg) repeat;
-  /* background-size: cover; */
   background-attachment: fixed;
   background-position: center;
   border-radius: 0;
@@ -215,7 +213,7 @@ body {
   text-align: -webkit-center;
 }
 
-.pastor-text0 {
+.twitch-stream-text0 {
   font-weight: 400;
   font-size: 2rem;
   color: rgb(0, 0, 0);
@@ -239,19 +237,11 @@ body {
 }
 
 .service-group {
-  max-width: 320px;
-}
-
-.service-group-title {
-  font-weight: 500;
-  font-size: 1.75rem;
-  color: rgb(0, 0, 0);
-  margin: 1rem 0;
+  max-width: 400px;
 }
 
 .service-description {
   font-size: 1rem;
-  width: 320px;
   margin-bottom: 1.5rem;
 }
 
@@ -261,7 +251,7 @@ body {
   color: rgb(211, 0, 127);
   width: fit-content;
   height: fit-content;
-  border: 2px solid rgb(250, 250, 250);
+  border: 2px solid #c9a47a;
   border-radius: 25px;
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
@@ -286,7 +276,7 @@ body {
   color: rgb(211, 0, 127);
   width: fit-content;
   height: fit-content;
-  border: 2px solid rgb(255, 255, 255);
+  border: 2px solid #c9a47a;
   border-radius: 25px;
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
@@ -440,10 +430,8 @@ body {
 .contact {
   font-size: 1.5rem;
   display: flex;
-  width: 100%;
-  height: 800px;
   margin: 0 auto;
-  background: url(../images/CF004.svg) no-repeat;
+  background: url(../images/downtownNashville0.jpg) no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -456,16 +444,15 @@ body {
   opacity: 0.9;
 }
 
-.middles-youth {
+.middles-moto {
   color: #000000;
   font-size: 1.5rem;
   display: flex;
   width: 100%;
   margin: 0 auto;
   padding: 4rem 0;
-  background-color: rgb(241, 241, 241);
+  background: url(../images/soundBoard.png) no-repeat;
   background-size: cover;
-  background-attachment: fixed;
   background-position: center;
   position: relative;
   text-align: center;
@@ -474,12 +461,8 @@ body {
   align-items: center;
 }
 
-#passion-items-music {
-  border-right: 0.1rem solid rgb(50, 50, 50);
-}
-
-#passion-items-drawing {
-  border-right: 0.1rem solid rgb(50, 50, 50);
+#middles-items-music {
+  font-family: "Rock Salt", sans-serif;
 }
 
 .middles2 {
@@ -536,11 +519,10 @@ body {
 }
 
 .stream {
-  background: url(../images/CF3.svg) no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  padding: 5rem 0;
+  padding: 5rem 0 0 0;
   text-align: center;
   text-align: -moz-center;
   text-align: -webkit-center;
@@ -553,14 +535,14 @@ body {
 .contact {
   font-size: 1.2rem;
   background-color: rgb(50, 50, 50);
-  background: url(../zion/zion8.svg) no-repeat center;
+  background: url(../images/downtownNashville0.jpg) no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
   position: relative;
   color: rgb(255, 255, 255);
-  margin: 0 0;
-  padding: 250px 150px;
+  margin: 0;
+  padding: 150px 150px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   text-align: center;
@@ -590,7 +572,7 @@ body {
 }
 
 .button2:hover {
-  color: rgb(253, 0, 109);
+  color: #c9a47a;
 }
 
 .overlay2 {
@@ -714,7 +696,6 @@ body {
   font-size: 8rem;
   margin: 0;
   color: #5d90ca;
-  /*  #5d90ca #9cbfe2 #ecc955	#14274a	#7699cb #8bcfd3	 */
   text-align: center;
   text-align: -moz-center;
   text-align: -webkit-center;
@@ -727,441 +708,11 @@ body {
   animation: color-change 30s infinite;
 }
 
-/*   
-  @-webkit-keyframes color-change {
-    0% {
-      color: #ff8a80;
-    }
-  
-    5% {
-      color: #ff80ab;
-    }
-  
-    10% {
-      color: #ea80fc;
-    }
-  
-    15% {
-      color: #b388ff;
-    }
-  
-    20% {
-      color: #8c9eff;
-    }
-  
-    25% {
-      color: #82b1ff;
-    }
-  
-    30% {
-      color: #80d8ff;
-    }
-  
-    35% {
-      color: #84ffff;
-    }
-  
-    40% {
-      color: #a7ffeb;
-    }
-  
-    45% {
-      color: #b9f6ca;
-    }
-  
-    50% {
-      color: #ccff90;
-    }
-  
-    55% {
-      color: #f4ff81;
-    }
-  
-    60% {
-      color: #ffff8d;
-    }
-  
-    65% {
-      color: #ffe57f;
-    }
-  
-    70% {
-      color: #ffd180;
-    }
-  
-    75% {
-      color: #ff9e80;
-    }
-  
-    80% {
-      color: #5d4037;
-    }
-  
-    85% {
-      color: #b5b3b3;
-    }
-  
-    90% {
-      color: #82aabd;
-    }
-  
-    95% {
-      color: #e29ab5;
-    }
-  
-    100% {
-      color: #ffffff;
-    }
-  }
-  
-  @-moz-keyframes color-change {
-    0% {
-      color: #ff8a80;
-    }
-  
-    5% {
-      color: #ff80ab;
-    }
-  
-    10% {
-      color: #ea80fc;
-    }
-  
-    15% {
-      color: #b388ff;
-    }
-  
-    20% {
-      color: #8c9eff;
-    }
-  
-    25% {
-      color: #82b1ff;
-    }
-  
-    30% {
-      color: #80d8ff;
-    }
-  
-    35% {
-      color: #84ffff;
-    }
-  
-    40% {
-      color: #a7ffeb;
-    }
-  
-    45% {
-      color: #b9f6ca;
-    }
-  
-    50% {
-      color: #ccff90;
-    }
-  
-    55% {
-      color: #f4ff81;
-    }
-  
-    60% {
-      color: #ffff8d;
-    }
-  
-    65% {
-      color: #ffe57f;
-    }
-  
-    70% {
-      color: #ffd180;
-    }
-  
-    75% {
-      color: #ff9e80;
-    }
-  
-    80% {
-      color: #5d4037;
-    }
-  
-    85% {
-      color: #b5b3b3;
-    }
-  
-    90% {
-      color: #82aabd;
-    }
-  
-    95% {
-      color: #e29ab5;
-    }
-  
-    100% {
-      color: #ffffff;
-    }
-  }
-  
-  @-ms-keyframes color-change {
-    0% {
-      color: #ff8a80;
-    }
-  
-    5% {
-      color: #ff80ab;
-    }
-  
-    10% {
-      color: #ea80fc;
-    }
-  
-    15% {
-      color: #b388ff;
-    }
-  
-    20% {
-      color: #8c9eff;
-    }
-  
-    25% {
-      color: #82b1ff;
-    }
-  
-    30% {
-      color: #80d8ff;
-    }
-  
-    35% {
-      color: #84ffff;
-    }
-  
-    40% {
-      color: #a7ffeb;
-    }
-  
-    45% {
-      color: #b9f6ca;
-    }
-  
-    50% {
-      color: #ccff90;
-    }
-  
-    55% {
-      color: #f4ff81;
-    }
-  
-    60% {
-      color: #ffff8d;
-    }
-  
-    65% {
-      color: #ffe57f;
-    }
-  
-    70% {
-      color: #ffd180;
-    }
-  
-    75% {
-      color: #ff9e80;
-    }
-  
-    80% {
-      color: #5d4037;
-    }
-  
-    85% {
-      color: #b5b3b3;
-    }
-  
-    90% {
-      color: #82aabd;
-    }
-  
-    95% {
-      color: #e29ab5;
-    }
-  
-    100% {
-      color: #ffffff;
-    }
-  }
-  
-  @-o-keyframes color-change {
-    0% {
-      color: #ff8a80;
-    }
-  
-    5% {
-      color: #ff80ab;
-    }
-  
-    10% {
-      color: #ea80fc;
-    }
-  
-    15% {
-      color: #b388ff;
-    }
-  
-    20% {
-      color: #8c9eff;
-    }
-  
-    25% {
-      color: #82b1ff;
-    }
-  
-    30% {
-      color: #80d8ff;
-    }
-  
-    35% {
-      color: #84ffff;
-    }
-  
-    40% {
-      color: #a7ffeb;
-    }
-  
-    45% {
-      color: #b9f6ca;
-    }
-  
-    50% {
-      color: #ccff90;
-    }
-  
-    55% {
-      color: #f4ff81;
-    }
-  
-    60% {
-      color: #ffff8d;
-    }
-  
-    65% {
-      color: #ffe57f;
-    }
-  
-    70% {
-      color: #ffd180;
-    }
-  
-    75% {
-      color: #ff9e80;
-    }
-  
-    80% {
-      color: #5d4037;
-    }
-  
-    85% {
-      color: #b5b3b3;
-    }
-  
-    90% {
-      color: #82aabd;
-    }
-  
-    95% {
-      color: #e29ab5;
-    }
-  
-    100% {
-      color: #ffffff;
-    }
-  }
-  @keyframes color-change {
-    0% {
-      color: #ff8a80;
-    }
-  
-    5% {
-      color: #ff80ab;
-    }
-  
-    10% {
-      color: #ea80fc;
-    }
-  
-    15% {
-      color: #b388ff;
-    }
-  
-    20% {
-      color: #8c9eff;
-    }
-  
-    25% {
-      color: #82b1ff;
-    }
-  
-    30% {
-      color: #80d8ff;
-    }
-  
-    35% {
-      color: #84ffff;
-    }
-  
-    40% {
-      color: #a7ffeb;
-    }
-  
-    45% {
-      color: #b9f6ca;
-    }
-  
-    50% {
-      color: #ccff90;
-    }
-  
-    55% {
-      color: #f4ff81;
-    }
-  
-    60% {
-      color: #ffff8d;
-    }
-  
-    65% {
-      color: #ffe57f;
-    }
-  
-    70% {
-      color: #ffd180;
-    }
-  
-    75% {
-      color: #ff9e80;
-    }
-  
-    80% {
-      color: #5d4037;
-    }
-  
-    85% {
-      color: #b5b3b3;
-    }
-  
-    90% {
-      color: #82aabd;
-    }
-  
-    95% {
-      color: #e29ab5;
-    }
-  
-    100% {
-      color: #ffffff;
-    }
-  } */
-
 #header-title-1 {
   text-align: center;
   text-align: -moz-center;
   text-align: -webkit-center;
-  justify-content: center; -----
+  justify-content: center;
 }
 
 #header-sub-title-0 {
@@ -1169,13 +720,13 @@ body {
   font-weight: 800;
   text-transform: uppercase;
   width: 35rem;
-  color: rgb(39, 12, 23);
+  color: #270c17;
   background-color: transparent;
   border-radius: 0.3rem;
   margin: 0 auto;
   text-align: center;
   text-align: -moz-center;
-  text-align: -webkit-center; -----
+  text-align: -webkit-center;
 }
 
 #header-sub-title-1 {
@@ -1190,7 +741,8 @@ body {
   margin: 0.3rem auto;
   text-align: center;
   text-align: -moz-center;
-  text-align: -webkit-center; -----
+  text-align: -webkit-center;
+  -----
 }
 
 #galatians {
@@ -1273,7 +825,7 @@ body {
   color: rgb(211, 0, 127);
 }
 
-#passions-words-0 {
+#middles-words-0 {
   font-family: "Kaushan Script";
   font-weight: 400;
 }
@@ -1466,7 +1018,7 @@ body {
   line-height: 1.8;
 }
 
-#passions-1 {
+#middles-1 {
   color: rgb(255, 255, 255);
   font-size: 1.5rem;
   max-width: 39rem;
@@ -1475,7 +1027,7 @@ body {
   line-height: 1.8;
 }
 
-#passions-2 {
+#middles-2 {
   color: rgb(255, 255, 255);
   font-size: 1.5rem;
   max-width: 39rem;
@@ -1485,7 +1037,7 @@ body {
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
-#middles-youth-dark {
+#middles-moto-dark {
   padding: 2.5rem 0rem;
 }
 
@@ -1519,7 +1071,7 @@ body {
 }
 
 #contact-verse {
-  font-family: "Kaushan Script";
+  font-family: "Rock Salt";
   font-weight: 400;
   font-size: 3.2rem;
   color: rgb(255, 255, 255);
@@ -1655,7 +1207,7 @@ body {
   .middles {
     background-attachment: local;
   }
-  .middles-youth {
+  .middles-moto {
     background-attachment: local;
   }
   .middles1 {
@@ -1686,7 +1238,10 @@ body {
     border-left: 5px solid #c9a47a;
   }
   .middles-item {
-    font-size: 2rem;
+    background-color: transparent;
+    color: #fff;
+    font-size: 1.5rem;
+    text-shadow: 3px 1px #000, 3px 1px #000, 3px 1px #000, 3px 1px #000;
   }
   .contact {
     background-attachment: local;
@@ -1785,10 +1340,6 @@ body {
     order: 2;
     -webkit-order: 2;
   }
-  #service-group-title {
-    order: 3;
-    -webkit-order: 3;
-  }
   #service-description {
     order: 4;
     -webkit-order: 4;
@@ -1823,7 +1374,7 @@ body {
     max-width: 300px;
     margin: auto;
   }
-  #passions-1, #passions-2 {
+  #middles-1, #middles-2 {
     font-size: 1.4rem;
   }
   #middles-words-3 {
@@ -1905,7 +1456,7 @@ body {
     width: 100%;
     margin: auto;
   }
-  .middles-youth {
+  .middles-moto {
     font-size: 0.7rem;
     width: fit-content;
     margin: auto;
@@ -2004,10 +1555,10 @@ body {
   #middles-words-1 {
     font-size: 1rem;
   }
-  #passions-1, #passions-2 {
+  #middles-1, #middles-2 {
     font-size: 1rem;
   }
-  #passions-3 {
+  #middles-3 {
     font-size: 1rem;
   }
   #middles-words-2 {
@@ -2026,7 +1577,7 @@ body {
   #middles-words-3 {
     font-size: 0.7rem;
   }
-  #middles-youth-dark {
+  #middles-moto-dark {
     padding: 2rem 0rem;
   }
   #contact-verse {
