@@ -40,10 +40,18 @@
   src: local("Gloria Hallelujah"), url("https://fonts.googleapis.com/css?family=Gloria+Hallelujah");
 }
 
+@font-face {
+  font-family: "Nanum Gothic";
+  font-weight: 400;
+  src: local("Nanum Gothic"), url("https://fonts.googleapis.com/css?family=Nanum+Gothic");
+}
+
 * {
   color: #270c17;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Nanum Gothic";
 }
+
+/* #63605b; */
 
 body {
   background-repeat: no-repeat;
@@ -105,7 +113,7 @@ body {
 }
 
 .about {
-  background-color: rgb(255, 255, 255);
+  /* background-color: rgb(236, 239, 241); */
   padding: 3rem 0 8rem 0;
   text-align: -moz-center;
   text-align: -webkit-center;
@@ -142,11 +150,28 @@ body {
 
 .middles-item {
   color: #fff;
-  font-size: 2.3rem;
+  font-size: 1.5rem;
   max-width: 39rem;
   margin: auto;
   padding: 1rem 1rem;
-  text-shadow: -1px -1px #000, 3px -1px #000, -3px 1px #000, 3px 1px #000;
+  text-shadow: -1px -1px 15px #000, 1px -1px 15px #000, -1px 1px 5px #000, 1px 1px 5px #000;
+}
+
+.contact {
+  color: #000000;
+  font-size: 1.5rem;
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10rem 0;
+  background: url(../images/1X4downtownNashville0.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  text-align: center;
+  text-align: -moz-center;
+  text-align: -webkit-center;
+  align-items: center;
 }
 
 .contact-item-group {
@@ -189,29 +214,130 @@ body {
   color: rgb(253, 0, 109);
 }
 
-.service-group0 {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  padding: 0 12%;
-  margin-top: 2rem;
-  text-align: center;
-  text-align: -moz-center;
-  text-align: -webkit-center;
-}
-
 .service {
-  background: url(../images/background1.jpg) repeat;
-  background-attachment: fixed;
-  background-position: center;
+  /* background-color: rgb(236, 239, 241); */
   border-radius: 0;
-  padding: 5rem 0;
+  padding: 2.5rem 0 0 0;
   flex-wrap: nowrap;
   flex-direction: row;
   text-align: center;
   text-align: -moz-center;
   text-align: -webkit-center;
 }
+
+.service-group-box {
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  text-align: center;
+  text-align: -moz-center;
+  text-align: -webkit-center;
+}
+
+.service-group {
+  font-size: 1.5rem;
+  display: flex;
+  width: 100%;
+  height: 800px;
+  margin: 0 auto;
+  background: url(../images/downtownNashvilleA.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  text-align: center;
+  text-align: -moz-center;
+  text-align: -webkit-center;
+  align-items: center;
+  box-shadow: 1px 1px 3px #dbdbdb;
+}
+
+.service-banner {
+  font-size: 1.5rem;
+  display: flex;
+  width: 100%;
+  height: 800px;
+  margin: 0 auto;
+  background: url(../images/mix0.jpg) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  position: relative;
+  text-align: center;
+  text-align: -moz-center;
+  text-align: -webkit-center;
+  align-items: center;
+  box-shadow: 1px 1px 3px #dbdbdb;
+}
+
+.service-banner:nth-of-type(2) {
+  font-size: 1.5rem;
+  display: flex;
+  width: 100%;
+  height: 800px;
+  margin: 0 auto;
+  background: url(../images/ccmBanner1.jpg) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  position: relative;
+  text-align: center;
+  text-align: -moz-center;
+  text-align: -webkit-center;
+  align-items: center;
+  box-shadow: 1px 1px 3px #dbdbdb;
+}
+
+.service-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  list-style: none;
+  text-align: center;
+  margin: 5% 1% 10% 1%;
+}
+
+.grid-item {
+  justify-content: center;
+  text-align: center;
+  /* margin: 5% 1% 10% 1%; */
+}
+
+.grid-item>dl {
+  position: relative;
+  width: 360px;
+}
+
+.grid-item>dl>dt {
+  position: relative;
+  width: 360px;
+}
+
+.grid-item>dl>dt>a {
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+.ico {
+  background: #4f1f22;
+  color: #ffffff;
+  font-size: 0.75rem;
+  padding: 0.15rem 0.75rem;
+  z-index: 1000;
+}
+
+.t1 {
+  margin: 0;
+  padding: 0;
+}
+
+.t2 {
+  margin: 0;
+  padding: 0;
+}
+
+/* width: 22%;
+margin: 0 1.5% 5% 1.5%; */
 
 .twitch-stream-text0 {
   font-weight: 400;
@@ -255,7 +381,9 @@ body {
   border-radius: 25px;
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
+  margin: auto;
   margin-top: 1rem;
+  margin-right: 0.2rem;
   padding: 10px 20px;
   text-decoration: none;
 }
@@ -280,7 +408,9 @@ body {
   border-radius: 25px;
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
+  margin: auto;
   margin-top: 1rem;
+  margin-left: 0.2rem;
   padding: 10px 20px;
   text-decoration: none;
 }
@@ -298,17 +428,6 @@ body {
 .class-group {
   margin: 5rem auto;
   margin-top: 7rem;
-}
-
-.student-group {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  padding: 0 12%;
-  margin-bottom: 5rem;
-  text-align: center;
-  text-align: -moz-center;
-  text-align: -webkit-center;
 }
 
 .button1 {
@@ -427,23 +546,6 @@ body {
   margin-bottom: 7rem;
 }
 
-.contact {
-  font-size: 1.5rem;
-  display: flex;
-  margin: 0 auto;
-  background: url(../images/downtownNashville0.jpg) no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  position: relative;
-  text-align: center;
-  text-align: -moz-center;
-  text-align: -webkit-center;
-  align-items: center;
-  flex-direction: column;
-  opacity: 0.9;
-}
-
 .middles-moto {
   color: #000000;
   font-size: 1.5rem;
@@ -462,7 +564,7 @@ body {
 }
 
 #middles-items-music {
-  font-family: "Rock Salt", sans-serif;
+  box-shadow: 1px 1px 50px #000000;
 }
 
 .middles2 {
@@ -519,9 +621,7 @@ body {
 }
 
 .stream {
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
+  /* background-color: rgb(236, 239, 241); */
   padding: 5rem 0 0 0;
   text-align: center;
   text-align: -moz-center;
@@ -530,25 +630,6 @@ body {
 
 .stream img {
   width: 350px;
-}
-
-.contact {
-  font-size: 1.2rem;
-  background-color: rgb(50, 50, 50);
-  background: url(../images/downtownNashville0.jpg) no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  position: relative;
-  color: rgb(255, 255, 255);
-  margin: 0;
-  padding: 150px 150px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  text-align: center;
-  text-align: -moz-center;
-  text-align: -webkit-center;
-  opacity: 0.9;
 }
 
 .contact-items {
@@ -716,7 +797,7 @@ body {
 }
 
 #header-sub-title-0 {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   font-weight: 800;
   text-transform: uppercase;
   width: 35rem;
@@ -761,22 +842,25 @@ body {
   color: rgb(0, 0, 0);
   width: fit-content;
   margin: auto;
+  padding: 0rem 1rem;
   text-align: center;
-  text-transform: uppercase;
-  -----
+  text-transform: capitalize;
+  border-right: 5px solid #c9a47a;
+  ;
 }
 
 #about-link {
+  font-family: "Nanum Gothic";
   color: rgb(211, 0, 127);
-  font-size: 0.95rem;
+  font-size: 1.2rem;
   font-weight: 400;
   text-decoration: none;
   -----
 }
 
 #about-introduce {
-  font-size: 0.9rem;
-  margin: 2.2rem 23%;
+  font-size: 1.2rem;
+  margin: 2.2rem 25%;
   margin-top: 2rem;
   text-align: center;
   text-align: -moz-center;
@@ -837,12 +921,18 @@ body {
   line-height: 1.8;
 }
 
+#service-picture {
+  /* max-width: 750px;
+  max-height: 1250px; */
+}
+
 #service-text {
   font-weight: 400;
-  font-size: 2.7rem;
+  font-size: 3.7rem;
   color: rgb(0, 0, 0);
   width: fit-content;
   margin: auto;
+  margin-bottom: 2rem;
   text-transform: uppercase;
 }
 
@@ -857,11 +947,14 @@ body {
 }
 
 #service-text1 {
-  font-size: 0.9rem;
-  color: rgb(0, 0, 0);
-  width: 55%;
+  font-size: 1.05rem;
+  color: rgb(255, 255, 255);
+  width: 40%;
+  min-width: 420px;
+  height: fit-content;
   margin: auto;
-  line-height: 1.6;
+  text-align: center;
+  line-height: 1.9;
 }
 
 #service-leaders {
@@ -880,7 +973,7 @@ body {
   width: 70%;
 }
 
-#student-leaders {
+#service-leaders {
   margin: auto;
 }
 
@@ -913,7 +1006,7 @@ body {
   text-decoration: none;
 }
 
-#student-text0 {
+#service-text0 {
   font-weight: 400;
   font-size: 2rem;
   color: rgb(0, 0, 0);
@@ -922,25 +1015,14 @@ body {
   text-transform: uppercase;
 }
 
-#student-text-highlight {
+#service-text-highlight {
   color: #c9a47a;
   font-size: 1.3rem;
   font-weight: 400;
   text-decoration: none;
 }
 
-#student-text1 {
-  font-size: 1.05rem;
-  color: rgb(0, 0, 0);
-  width: 40%;
-  min-width: 420px;
-  height: fit-content;
-  margin: auto;
-  text-align: center;
-  line-height: 1.9;
-}
-
-#student-name {
+#service-name {
   font-family: "Kaushan Script";
   font-size: 1.2rem;
   color: rgb(211, 0, 127);
@@ -981,7 +1063,7 @@ body {
 }
 
 #service-text-highlight {
-  color: rgb(211, 0, 127);
+  color: #c9a47a;
   font-size: 1.2rem;
   font-weight: 400;
   text-decoration: none;
@@ -1358,7 +1440,7 @@ body {
   #leader-text1 {
     width: 56%;
   }
-  #student-text1 {
+  #service-text1 {
     min-width: 80%;
     margin-top: 1rem;
   }
@@ -1436,7 +1518,7 @@ body {
     display: flex;
     flex-wrap: wrap;
   }
-  .student-group {
+  .service-group {
     padding: 0;
   }
   .content1 {
@@ -1458,7 +1540,6 @@ body {
   }
   .middles-moto {
     font-size: 0.7rem;
-    width: fit-content;
     margin: auto;
     padding: 2rem 0px;
   }
@@ -1536,15 +1617,15 @@ body {
   #leader-text1 {
     width: 77%;
   }
-  #student-leaders {
+  #service-leaders {
     height: 500px;
     padding: 0;
   }
-  #student-text0 {
+  #service-text0 {
     font-size: 1.5rem;
     margin: 1.2rem auto;
   }
-  #student-text1 {
+  #service-text1 {
     font-size: 0.9rem;
     min-width: 80%;
     margin-top: 1rem;
