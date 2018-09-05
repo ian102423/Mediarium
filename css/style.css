@@ -1,25 +1,7 @@
 @font-face {
-  font-family: "Rock Salt";
-  font-weight: 400;
-  src: local("Rock Salt"), url("https://fonts.googleapis.com/css?family=Rock+Salt");
-}
-
-@font-face {
-  font-family: "Kaushan Script";
-  font-weight: 400;
-  src: local("Kaushan Script"), url("https://fonts.googleapis.com/css?family=Kaushan+Script");
-}
-
-@font-face {
   font-family: "Montserrat";
   font-weight: 400;
   src: local("Montserrat"), url("https://fonts.googleapis.com/css?family=Montserrat");
-}
-
-@font-face {
-  font-family: "Bahiana";
-  font-weight: 400;
-  src: local("Bahiana"), url("https://fonts.googleapis.com/css?family=Bahiana");
 }
 
 @font-face {
@@ -35,23 +17,25 @@
 }
 
 @font-face {
-  font-family: "Gloria Hallelujah";
+  font-family: "Nanum Myeongjo";
   font-weight: 400;
-  src: local("Gloria Hallelujah"), url("https://fonts.googleapis.com/css?family=Gloria+Hallelujah");
+  src: local("Nanum Myeongjo"), url("https://fonts.googleapis.com/css?family=Nanum Myeongjo");
 }
 
 @font-face {
-  font-family: "Nanum Gothic";
+  font-family: 'Quantico', sans-serif;
   font-weight: 400;
-  src: local("Nanum Gothic"), url("https://fonts.googleapis.com/css?family=Nanum+Gothic");
+  src: local("Quantico"), url('https://fonts.googleapis.com/css?family=Quantico:400,700i');
 }
 
 * {
   color: #270c17;
-  font-family: "Nanum Gothic";
+  font-family: "Nanum Myeongjo";
 }
 
-/* #63605b; */
+/* primary color */
+
+/* #299eb6 #c9a47a #270c17 */
 
 body {
   background-repeat: no-repeat;
@@ -113,39 +97,9 @@ body {
 }
 
 .about {
-  /* background-color: rgb(236, 239, 241); */
   padding: 3rem 0 8rem 0;
   text-align: -moz-center;
   text-align: -webkit-center;
-}
-
-.middles {
-  font-size: 1.5rem;
-  display: flex;
-  width: 100%;
-  height: 800px;
-  margin: 0 auto;
-  background: url(../images/downtownNashville0.jpg) no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  position: relative;
-  text-align: center;
-  text-align: -moz-center;
-  text-align: -webkit-center;
-  align-items: center;
-  opacity: 0.9;
-}
-
-.middles-words {
-  color: rgb(80, 80, 80);
-  font-weight: 400;
-  font-size: 1.5rem;
-  line-height: 1.8;
-  max-width: 39rem;
-  margin: auto;
-  padding: 0 1rem;
-  border-left: 2px solid #c9a47a;
 }
 
 .middles-item {
@@ -164,7 +118,7 @@ body {
   width: 100%;
   margin: 0 auto;
   padding: 10rem 0;
-  background: url(../images/1X4downtownNashville0.jpg) no-repeat;
+  background: url(../images/footer.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -174,48 +128,7 @@ body {
   align-items: center;
 }
 
-.contact-item-group {
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.contact-item-group-detail {
-  width: 50%;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  text-align: center;
-  flex-direction: column;
-}
-
-.contact-item-group-detail>h3 {
-  font-weight: 500;
-  color: rgb(255, 255, 255);
-  font-size: 1.5rem;
-  width: 100%;
-  margin: 0 auto;
-  text-transform: uppercase;
-}
-
-.button3 {
-  color: rgb(0, 0, 0);
-  font-size: 1rem;
-  font-family: "Bahiana";
-  text-transform: none;
-  text-decoration: none;
-  padding: 0 0.5rem;
-  cursor: pointer;
-  transition: all 0.3s ease-out;
-}
-
-.button3:hover {
-  color: rgb(253, 0, 109);
-}
-
 .service {
-  /* background-color: rgb(236, 239, 241); */
   border-radius: 0;
   padding: 2.5rem 0 0 0;
   flex-wrap: nowrap;
@@ -234,30 +147,13 @@ body {
   text-align: -webkit-center;
 }
 
-.service-group {
-  font-size: 1.5rem;
-  display: flex;
-  width: 100%;
-  height: 800px;
-  margin: 0 auto;
-  background: url(../images/downtownNashvilleA.jpg) no-repeat;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  text-align: center;
-  text-align: -moz-center;
-  text-align: -webkit-center;
-  align-items: center;
-  box-shadow: 1px 1px 3px #dbdbdb;
-}
-
 .service-banner {
   font-size: 1.5rem;
   display: flex;
   width: 100%;
   height: 800px;
   margin: 0 auto;
-  background: url(../images/mix0.jpg) no-repeat;
+  background: url(../images/mix.jpg) no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -266,7 +162,7 @@ body {
   text-align: -moz-center;
   text-align: -webkit-center;
   align-items: center;
-  box-shadow: 1px 1px 3px #dbdbdb;
+  box-shadow: 5px 5px 15px #dbdbdb;
 }
 
 .service-banner:nth-of-type(2) {
@@ -275,7 +171,7 @@ body {
   width: 100%;
   height: 800px;
   margin: 0 auto;
-  background: url(../images/ccmBanner1.jpg) no-repeat;
+  background: url(../images/ccm1.jpg) no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -284,7 +180,7 @@ body {
   text-align: -moz-center;
   text-align: -webkit-center;
   align-items: center;
-  box-shadow: 1px 1px 3px #dbdbdb;
+  box-shadow: 5px 5px 15px #dbdbdb;
 }
 
 .service-list {
@@ -295,12 +191,36 @@ body {
   list-style: none;
   text-align: center;
   margin: 5% 1% 10% 1%;
+  width: 100%;
 }
 
 .grid-item {
   justify-content: center;
   text-align: center;
-  /* margin: 5% 1% 10% 1%; */
+}
+
+/* service list grid item options */
+
+/* 1100px */
+
+.grid-item:nth-of-type(1) {
+  margin-right: 12%;
+}
+
+.grid-item:nth-of-type(2) {
+  margin-left: 12%;
+}
+
+.grid-item:nth-of-type(3) {
+  margin: -12% 50%;
+}
+
+.grid-item:nth-of-type(4) {
+  margin-right: 12%;
+}
+
+.grid-item:nth-of-type(5) {
+  margin-left: 12%;
 }
 
 .grid-item>dl {
@@ -319,47 +239,28 @@ body {
 }
 
 .ico {
-  background: #4f1f22;
   color: #ffffff;
   font-size: 0.75rem;
-  padding: 0.15rem 0.75rem;
-  z-index: 1000;
+  min-width: 115px;
+  margin-top: -10px;
+  padding: 3px 10px 3px 20px;
+  position: absolute;
+  top: 50%;
+  left: -20px;
 }
 
 .t1 {
   margin: 0;
+  margin-top: 1rem;
   padding: 0;
 }
 
 .t2 {
+  color: #c9a47a;
+  font-size: 0.75rem;
   margin: 0;
+  margin-top: 0.3rem;
   padding: 0;
-}
-
-/* width: 22%;
-margin: 0 1.5% 5% 1.5%; */
-
-.twitch-stream-text0 {
-  font-weight: 400;
-  font-size: 2rem;
-  color: rgb(0, 0, 0);
-  width: 100%;
-  margin: 2rem auto;
-  margin-top: 5rem;
-  text-transform: uppercase;
-}
-
-.service-profile {
-  display: flex;
-  width: fit-content;
-  margin: 7rem auto;
-  margin-top: 0;
-  max-width: 32.5rem;
-  text-align: center;
-  text-align: -moz-center;
-  text-align: -webkit-center;
-  flex-direction: row;
-  flex: 1;
 }
 
 .service-group {
@@ -430,21 +331,6 @@ margin: 0 1.5% 5% 1.5%; */
   margin-top: 7rem;
 }
 
-.button1 {
-  color: rgb(0, 0, 0);
-  font-size: 1rem;
-  font-family: "Bahiana";
-  text-transform: none;
-  text-decoration: none;
-  padding: 0 0.5rem;
-  cursor: pointer;
-  transition: all 0.3s ease-out;
-}
-
-.button1:hover {
-  color: rgb(253, 0, 109);
-}
-
 .overlay1 {
   position: fixed;
   top: 0;
@@ -481,7 +367,7 @@ margin: 0 1.5% 5% 1.5%; */
   font-size: 2rem;
   font-weight: bold;
   text-decoration: none;
-  color: rgb(0, 0, 0);
+  color: #000000;
 }
 
 .popup1 .close1:hover {
@@ -520,7 +406,7 @@ margin: 0 1.5% 5% 1.5%; */
   font-size: 2rem;
   font-weight: bold;
   text-decoration: none;
-  color: rgb(0, 0, 0);
+  color: #000000;
 }
 
 .popup3 .close3:hover {
@@ -546,10 +432,10 @@ margin: 0 1.5% 5% 1.5%; */
   margin-bottom: 7rem;
 }
 
-.middles-moto {
+.middles-moto0 {
+  display: flex;
   color: #000000;
   font-size: 1.5rem;
-  display: flex;
   width: 100%;
   margin: 0 auto;
   padding: 4rem 0;
@@ -561,75 +447,27 @@ margin: 0 1.5% 5% 1.5%; */
   text-align: -moz-center;
   text-align: -webkit-center;
   align-items: center;
+  border-radius: 75px;
 }
 
-#middles-items-music {
-  box-shadow: 1px 1px 50px #000000;
-}
-
-.middles2 {
-  font-size: 1.5rem;
+.middles-moto1 {
   display: flex;
-  width: 100%;
-  height: 800px;
-  margin: 0 auto;
-  background: url(../images/CF005.svg) no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  position: relative;
-  text-align: center;
-  text-align: -moz-center;
-  text-align: -webkit-center;
-  align-items: center;
-  opacity: 0.9;
-}
-
-.middles3 {
+  color: #000000;
   font-size: 1.5rem;
-  display: flex;
-  width: 100%;
-  height: 800px;
-  margin: 0 auto;
-  background: url(../images/CF006.svg) no-repeat;
+  width: 70%;
+  height: 300px;
+  margin: 5rem auto;
+  margin-bottom: 2.5rem;
+  padding: 4rem 0;
+  background: url(../images/ccm0.jpg) no-repeat;
   background-size: cover;
-  background-attachment: fixed;
   background-position: center;
   position: relative;
   text-align: center;
   text-align: -moz-center;
   text-align: -webkit-center;
   align-items: center;
-  opacity: 0.9;
-}
-
-.middles4 {
-  font-size: 1.5rem;
-  display: flex;
-  width: 100%;
-  height: 800px;
-  margin: 0 auto;
-  background: url(../images/CF007.svg) no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  position: relative;
-  text-align: center;
-  text-align: -moz-center;
-  text-align: -webkit-center;
-  align-items: center;
-  opacity: 0.9;
-}
-
-.stream {
-  /* background-color: rgb(236, 239, 241); */
-  padding: 5rem 0 0 0;
-  text-align: center;
-  text-align: -moz-center;
-  text-align: -webkit-center;
-}
-
-.stream img {
-  width: 350px;
+  box-shadow: 20px 20px 15px #dbdbdb;
 }
 
 .contact-items {
@@ -643,7 +481,7 @@ margin: 0 1.5% 5% 1.5%; */
 }
 
 .button2 {
-  color: rgb(0, 0, 0);
+  color: #000000;
   font-size: 0.7rem;
   text-transform: none;
   text-decoration: none;
@@ -710,7 +548,7 @@ margin: 0 1.5% 5% 1.5%; */
   font-size: 2rem;
   font-weight: bold;
   text-decoration: none;
-  color: rgb(0, 0, 0);
+  color: #000000;
 }
 
 .popup2 .close2:hover {
@@ -727,7 +565,7 @@ margin: 0 1.5% 5% 1.5%; */
 }
 
 #to-the-top {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Quantico", sans-serif;
   font-weight: 400;
   font-size: 1.5rem;
   position: fixed;
@@ -837,25 +675,23 @@ margin: 0 1.5% 5% 1.5%; */
 
 #about-text {
   display: table;
-  font-weight: 400;
+  font-family: 'Quantico';
   font-size: 3rem;
-  color: rgb(0, 0, 0);
+  font-weight: 400;
+  color: #000000;
   width: fit-content;
   margin: auto;
-  padding: 0rem 1rem;
+  padding: 0;
   text-align: center;
-  text-transform: capitalize;
-  border-right: 5px solid #c9a47a;
-  ;
+  text-transform: uppercase;
+  border-bottom: 5px solid #299eb6;
 }
 
 #about-link {
-  font-family: "Nanum Gothic";
-  color: rgb(211, 0, 127);
+  color: #299eb6;
   font-size: 1.2rem;
   font-weight: 400;
   text-decoration: none;
-  -----
 }
 
 #about-introduce {
@@ -909,37 +745,27 @@ margin: 0 1.5% 5% 1.5%; */
   color: rgb(211, 0, 127);
 }
 
-#middles-words-0 {
-  font-family: "Kaushan Script";
-  font-weight: 400;
-}
-
-#middles-words-1 {
-  font-weight: 400;
-  font-size: 1.5rem;
-  max-width: 45rem;
-  line-height: 1.8;
-}
-
 #service-picture {
   /* max-width: 750px;
   max-height: 1250px; */
 }
 
 #service-text {
+  font-family: 'Quantico';
   font-weight: 400;
-  font-size: 3.7rem;
-  color: rgb(0, 0, 0);
+  font-size: 3.25rem;
+  color: #000000;
   width: fit-content;
   margin: auto;
   margin-bottom: 2rem;
   text-transform: uppercase;
+  border-bottom: 5px solid #c9a47a;
 }
 
 #service-text0 {
   font-weight: 400;
-  font-size: 2rem;
-  color: rgb(0, 0, 0);
+  font-size: 1.2rem;
+  color: #000000;
   width: fit-content;
   margin: auto;
   margin-top: 5rem;
@@ -947,56 +773,96 @@ margin: 0 1.5% 5% 1.5%; */
 }
 
 #service-text1 {
-  font-size: 1.05rem;
+  font-family: "Montserrat";
+  font-size: 1.75rem;
+  font-weight: 900;
   color: rgb(255, 255, 255);
-  width: 40%;
+  width: 50%;
   min-width: 420px;
   height: fit-content;
   margin: auto;
   text-align: center;
   line-height: 1.9;
-}
-
-#service-leaders {
-  width: 90%;
+  border: 5px solid #c9a47a;
+  border-radius: 27.5px;
 }
 
 #service-text2 {
-  font-size: 1rem;
-  color: rgb(0, 0, 0);
-  width: fit-content;
+  font-family: "Montserrat";
+  font-size: 1.75rem;
+  font-weight: 900;
+  color: rgb(255, 255, 255);
+  width: 360px;
+  height: 360px;
   margin: auto;
-  text-transform: uppercase;
+  padding: 2rem;
+  text-align: center;
+  line-height: 1.9;
+  border: 5px solid #4041aa;
+  border-radius: 1000px;
+  justify-content: flex-end;
+}
+
+#service-text-highlight0 {
+  font-family: "Montserrat";
+  font-weight: 900;
+  color: #c9a47a;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+#service-text-highlight1 {
+  font-family: "Montserrat";
+  font-weight: 900;
+  color: #4041aa;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+#middles-items-music {
+  box-shadow: 1px 1px 50px #000000;
+}
+
+#hashtag {
+  font-weight: 900;
+}
+
+/* ico box color */
+
+#ico0 {
+  color: #000;
+  background: #e9f9fe;
+}
+
+#ico1 {
+  background: #9197a9;
+}
+
+#ico2 {
+  background: #e59f78;
+}
+
+#ico3 {
+  background: #d4cd81;
+}
+
+#ico4 {
+  background: #8812b6;
 }
 
 #class-leaders {
   width: 70%;
 }
 
-#service-leaders {
-  margin: auto;
-}
-
 #leader-text0 {
   font-weight: 400;
   font-size: 2rem;
-  color: rgb(0, 0, 0);
+  color: #000000;
   width: 100%;
   margin: 2rem auto;
   text-transform: uppercase;
-}
-
-#leader-text1 {
-  font-size: 1rem;
-  color: rgb(0, 0, 0);
-  width: 40%;
-  height: fit-content;
-  margin: auto;
-  margin-top: 2rem;
-  text-align: center;
-  border-right: 2px solid #c9a47a;
-  border-left: 2px solid #c9a47a;
-  line-height: 1.7;
 }
 
 #leader-text-highlight {
@@ -1009,34 +875,16 @@ margin: 0 1.5% 5% 1.5%; */
 #service-text0 {
   font-weight: 400;
   font-size: 2rem;
-  color: rgb(0, 0, 0);
+  color: #000000;
   width: 100%;
   margin: 2rem auto;
   text-transform: uppercase;
 }
 
-#service-text-highlight {
-  color: #c9a47a;
-  font-size: 1.3rem;
-  font-weight: 400;
-  text-decoration: none;
-}
-
-#service-name {
-  font-family: "Kaushan Script";
-  font-size: 1.2rem;
-  color: rgb(211, 0, 127);
-  width: 40%;
-  height: fit-content;
-  margin: auto;
-  text-align: center;
-  line-height: 1.9;
-}
-
 #media-text0 {
   font-weight: 400;
   font-size: 2rem;
-  color: rgb(0, 0, 0);
+  color: #000000;
   width: 100%;
   margin: 2rem auto;
   text-transform: uppercase;
@@ -1044,7 +892,7 @@ margin: 0 1.5% 5% 1.5%; */
 
 #media-text1 {
   font-size: 1rem;
-  color: rgb(0, 0, 0);
+  color: #000000;
   width: 40%;
   height: fit-content;
   margin: auto;
@@ -1062,24 +910,10 @@ margin: 0 1.5% 5% 1.5%; */
   text-decoration: none;
 }
 
-#service-text-highlight {
-  color: #c9a47a;
-  font-size: 1.2rem;
-  font-weight: 400;
-  text-decoration: none;
-}
-
 #service-facebook-1 {
   background: url() no-repeat 50px;
   background-position: 3.15rem 1.1rem;
   background-size: 230px;
-}
-
-#middles-words-2 {
-  font-weight: 400;
-  font-size: 1.5rem;
-  max-width: 45rem;
-  line-height: 1.8;
 }
 
 #contact-text {
@@ -1098,79 +932,6 @@ margin: 0 1.5% 5% 1.5%; */
   margin: 3rem 5rem;
   width: 25rem;
   line-height: 1.8;
-}
-
-#middles-1 {
-  color: rgb(255, 255, 255);
-  font-size: 1.5rem;
-  max-width: 39rem;
-  margin: auto;
-  padding: 0 20%;
-  line-height: 1.8;
-}
-
-#middles-2 {
-  color: rgb(255, 255, 255);
-  font-size: 1.5rem;
-  max-width: 39rem;
-  margin: auto;
-  padding: 0 20%;
-  line-height: 1.8;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-}
-
-#middles-moto-dark {
-  padding: 2.5rem 0rem;
-}
-
-#middles-words-3 {
-  font-weight: 400;
-  font-size: 1.2rem;
-  line-height: 1.8;
-}
-
-#stream-text {
-  font-weight: 400;
-  font-size: 3rem;
-  color: rgb(0, 0, 0);
-  width: fit-content;
-  margin: auto;
-  margin-bottom: 3rem;
-  text-transform: uppercase;
-}
-
-#middles-words-4 {
-  font-weight: 400;
-  font-size: 1.2rem;
-  line-height: 1.8;
-}
-
-#stream-introduce {
-  font-size: 1.1rem;
-  width: fit-content;
-  margin: 2rem auto 2.2rem auto;
-  line-height: 1.65;
-}
-
-#contact-verse {
-  font-family: "Rock Salt";
-  font-weight: 400;
-  font-size: 3.2rem;
-  color: rgb(255, 255, 255);
-  width: fit-content;
-  margin: 0 auto;
-  margin-bottom: 2rem;
-  text-align: center;
-  text-align: -moz-center;
-  text-align: -webkit-center;
-}
-
-#join-us {
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 3rem;
-  font-family: "Rock Salt";
-  margin: 0;
 }
 
 #event-link {
@@ -1209,7 +970,7 @@ margin: 0 1.5% 5% 1.5%; */
 
 #credit2 {
   font-size: 1.1rem;
-  color: rgb(0, 0, 0);
+  color: #000000;
   text-transform: none;
   text-decoration: none;
   margin-top: 1rem;
@@ -1257,6 +1018,9 @@ margin: 0 1.5% 5% 1.5%; */
   #service-text1 {
     max-width: 50rem;
   }
+  #service-text2 {
+    max-width: 50rem;
+  }
 }
 
 @media (max-width: 900px) {
@@ -1286,22 +1050,10 @@ margin: 0 1.5% 5% 1.5%; */
   .contact {
     background-attachment: local;
   }
-  .middles {
+  .middles-moto0 {
     background-attachment: local;
   }
-  .middles-moto {
-    background-attachment: local;
-  }
-  .middles1 {
-    background-attachment: local;
-  }
-  .middles2 {
-    background-attachment: local;
-  }
-  .middles3 {
-    background-attachment: local;
-  }
-  .middles4 {
+  .middles-moto1 {
     background-attachment: local;
   }
   .wrapper-logo {
@@ -1314,10 +1066,6 @@ margin: 0 1.5% 5% 1.5%; */
   }
   .header-title-0 {
     font-size: 5rem;
-  }
-  .middles-words {
-    font-size: 2rem;
-    border-left: 5px solid #c9a47a;
   }
   .middles-item {
     background-color: transparent;
@@ -1336,12 +1084,6 @@ margin: 0 1.5% 5% 1.5%; */
     background-attachment: local;
     background-repeat: repeat-y;
   }
-  .service-profile:nth-child(odd) {
-    flex-flow: column-reverse;
-  }
-  .service-profile:nth-child(even) {
-    flex-flow: column-reverse;
-  }
   .content3 {
     flex-flow: column;
     display: flex;
@@ -1351,15 +1093,6 @@ margin: 0 1.5% 5% 1.5%; */
   }
   .portflio-facebook {
     margin-bottom: 1rem;
-  }
-  .contact-item-group-detail {
-    width: 100%;
-  }
-  .stream {
-    background-attachment: local;
-  }
-  .stream img {
-    width: 250px;
   }
   .img {
     width: 100%;
@@ -1377,9 +1110,6 @@ margin: 0 1.5% 5% 1.5%; */
   }
   #header-title-0:nth-child(1) {
     font-size: 5.5rem;
-  }
-  #middles-words-1 {
-    font-size: 1.4rem;
   }
   #header-sub-title-0 {
     font-size: 0.7rem;
@@ -1407,17 +1137,6 @@ margin: 0 1.5% 5% 1.5%; */
     margin: 0;
     margin-right: 10%;
   }
-  #service-leaders {
-    width: 100%;
-  }
-  #service-text2 {
-    min-width: 80%;
-    margin-top: 1rem;
-  }
-  #service-profile-img1 {
-    order: 1;
-    -webkit-order: 1;
-  }
   #service-group {
     order: 2;
     -webkit-order: 2;
@@ -1444,9 +1163,9 @@ margin: 0 1.5% 5% 1.5%; */
     min-width: 80%;
     margin-top: 1rem;
   }
-  #middles-words-2 {
-    font-size: 1.3rem;
-    max-width: 40rem;
+  #service-text2 {
+    min-width: 80%;
+    margin-top: 1rem;
   }
   #contact-text {
     margin: 3rem auto;
@@ -1456,28 +1175,8 @@ margin: 0 1.5% 5% 1.5%; */
     max-width: 300px;
     margin: auto;
   }
-  #middles-1, #middles-2 {
-    font-size: 1.4rem;
-  }
-  #middles-words-3 {
-    font-size: 1.2rem;
-  }
-  #stream-introduce {
-    margin: 2rem 15% 3rem 15%;
-  }
-  #middles-words-4 {
-    font-size: 1.2rem;
-  }
   #contact-facebook-link, #contact-event-link {
     font-size: 1.1rem;
-  }
-  #contact-verse {
-    font-size: 1.75rem;
-    max-width: 400px;
-    margin-bottom: 0.5rem;
-  }
-  #join-us {
-    font-size: 2rem;
   }
   #music-button {
     display: none;
@@ -1514,10 +1213,6 @@ margin: 0 1.5% 5% 1.5%; */
   .service-group {
     margin: auto;
   }
-  .service-profile {
-    display: flex;
-    flex-wrap: wrap;
-  }
   .service-group {
     padding: 0;
   }
@@ -1525,43 +1220,20 @@ margin: 0 1.5% 5% 1.5%; */
     flex-flow: column;
     display: flex;
   }
-  .contact-item-group-detail>h3 {
-    font-size: 1.3rem;
-  }
-  .middles {
-    font-size: 0.7rem;
-    width: fit-content;
-    margin: auto;
-  }
   .contact {
     font-size: 0.7rem;
     width: 100%;
     margin: auto;
   }
-  .middles-moto {
+  .middles-moto0 {
     font-size: 0.7rem;
     margin: auto;
     padding: 2rem 0px;
   }
-  .middles1 {
+  .middles-moto1 {
     font-size: 0.7rem;
-    width: fit-content;
     margin: auto;
-  }
-  .middles2 {
-    font-size: 0.7rem;
-    width: fit-content;
-    margin: auto;
-  }
-  .middles3 {
-    font-size: 0.7rem;
-    width: fit-content;
-    margin: auto;
-  }
-  .middles4 {
-    font-size: 0.7rem;
-    width: fit-content;
-    margin: auto;
+    padding: 2rem 0px;
   }
   .content3 {
     flex-flow: column;
@@ -1600,13 +1272,6 @@ margin: 0 1.5% 5% 1.5%; */
     font-size: 0.75rem;
     margin: 0;
   }
-  #service-text2 {
-    min-width: 80%;
-    margin-top: 1rem;
-  }
-  #service-leaders {
-    padding: 0;
-  }
   #class-leaders {
     width: 100%;
   }
@@ -1617,36 +1282,24 @@ margin: 0 1.5% 5% 1.5%; */
   #leader-text1 {
     width: 77%;
   }
-  #service-leaders {
-    height: 500px;
-    padding: 0;
-  }
   #service-text0 {
     font-size: 1.5rem;
     margin: 1.2rem auto;
   }
   #service-text1 {
     font-size: 0.9rem;
+    width: 70%;
+    min-width: 80%;
+    margin-top: 1rem;
+  }
+  #service-text2 {
+    font-size: 0.9rem;
+    width: 70%;
     min-width: 80%;
     margin-top: 1rem;
   }
   #media-text1 {
     width: 77%;
-  }
-  #middles-words-1 {
-    font-size: 1rem;
-  }
-  #middles-1, #middles-2 {
-    font-size: 1rem;
-  }
-  #middles-3 {
-    font-size: 1rem;
-  }
-  #middles-words-2 {
-    font-size: 0.7rem;
-  }
-  #service-text1 {
-    width: 70%;
   }
   #contact-text {
     margin: 2rem auto;
@@ -1655,23 +1308,8 @@ margin: 0 1.5% 5% 1.5%; */
     font-size: 0.9rem;
     margin: 2rem auto;
   }
-  #middles-words-3 {
-    font-size: 0.7rem;
-  }
-  #middles-moto-dark {
-    padding: 2rem 0rem;
-  }
-  #contact-verse {
-    margin-bottom: 0;
-  }
-  #join-us {
-    font-size: 3rem;
-  }
   #contact-facebook-link, #contact-event-link {
     font-size: 1rem;
-  }
-  #middles-words-4 {
-    font-size: 0.7rem;
   }
   #music-button {
     right: 1.2rem;
