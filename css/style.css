@@ -23,60 +23,60 @@
 }
 
 @font-face {
-  font-family: 'Quantico', sans-serif;
+  font-family: Quantico, sans-serif;
   font-weight: 400;
-  src: local("Quantico"), url('https://fonts.googleapis.com/css?family=Quantico:400,700i');
+  src: local("Quantico"), url("https://fonts.googleapis.com/css?family=Quantico:400,700i");
 }
 
 * {
   color: #270c17;
-  font-family: "Nanum Myeongjo";
+  font-family: "Nanum Myeongjo"
 }
 
 /* primary color */
 
-/* #299eb6 #c9a47a #270c17 */
+/* #c9a47a #299eb6 #4041aa */
 
 body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   font-weight: 300;
   margin: 0;
-  opacity: 0.95;
-  -webkit-font-smoothing: antialiased;
+  opacity: .95;
+  -webkit-font-smoothing: antialiased
 }
 
 .nav-to-top {
   position: fixed;
   right: 2rem;
   bottom: 1.5rem;
-  z-index: 1000;
+  z-index: 1000
 }
 
 .wrapper {
   font-size: 1.5rem;
-  background-color: #ffffff;
+  background-color: #fff;
   width: 100%;
   position: fixed;
   top: 0;
-  opacity: 0.9;
+  opacity: .9;
   z-index: 1000;
-  margin-top: 0.5rem;
+  margin-top: .5rem;
   padding: 1rem 0;
 }
 
 .wrapper:hover {
   opacity: 1;
-  transition: 0.4s;
-  -webkit-transition: all 0.4s ease 0s;
-  -moz-transition: all 0.4s ease 0s;
-  -o-transition: all 0.4s ease 0s;
-  transition: all 0.4s ease 0s;
+  transition: .4s;
+  -webkit-transition: all .4s ease 0s;
+  -moz-transition: all .4s ease 0s;
+  -o-transition: all .4s ease 0s;
+  transition: all .4s ease 0s;
 }
 
 .wrapper-logo {
   width: fit-content;
-  margin: 0rem 0 0 2.5rem;
+  margin: 0 0 0 2.5rem;
   position: absolute;
   left: 0;
   top: 0;
@@ -86,7 +86,7 @@ body {
   text-align: center;
   text-align: -moz-center;
   text-align: -webkit-center;
-  background: url(../images/coralSea1.png) no-repeat;
+  background: url(../images/coralSea.png) no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -94,6 +94,7 @@ body {
   margin-top: -1.5rem;
   padding-top: 250px;
   padding-bottom: 250px;
+  box-shadow: 5px 5px 15px #dbdbdb;
 }
 
 .about {
@@ -102,24 +103,67 @@ body {
   text-align: -webkit-center;
 }
 
-.middles-item {
-  color: #fff;
-  font-size: 1.5rem;
-  max-width: 39rem;
-  margin: auto;
-  padding: 1rem 1rem;
-  text-shadow: -1px -1px 15px #000, 1px -1px 15px #000, -1px 1px 5px #000, 1px 1px 5px #000;
+.cooperator {
+  /* background-color: #4041aa #b8efe4
+  #c9a47a; */
+  flex-wrap: wrap;
+  width: 97.5%;
+  margin: 3rem auto;
+  padding: 1.25rem 0;
+  padding-bottom: 0.5rem;
+  background: url(../images/rainbow.jpg) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  list-style: none;
+  text-align: center;
+  box-shadow: 20px 20px 15px #dbdbdb;
+  border-radius: 15px;
+}
+
+.cooperator-text {
+  color: #ffffff;
+  font-family: "Quantico";
+  font-size: 1.75rem;
+  width: fit-content;
+  margin: 0 auto;
+  margin-bottom: 0.5rem;
+  padding: 0 1rem;
+  text-transform: uppercase;
+  border-right: 1.5px solid #ffffff;
+  border-left: 1.5px solid #ffffff;
+  mix-blend-mode: difference;
+}
+
+.cooperator-box {
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  align-items: center;
+  text-align: center;
+  text-align: -moz-center;
+  text-align: -webkit-center;
+  justify-content: space-evenly;
+}
+
+.cooperator-item {
+  /* width: 25%; */
+  list-style: none;
 }
 
 .contact {
-  color: #000000;
+  color: #000;
   font-size: 1.5rem;
   display: flex;
   width: 100%;
   margin: 0 auto;
   padding: 10rem 0;
-  background: url(../images/footer.jpg) no-repeat;
+  padding-top: 5rem;
+  background: url(../images/coralSea.png) no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   background-position: center;
   position: relative;
   text-align: center;
@@ -130,12 +174,12 @@ body {
 
 .service {
   border-radius: 0;
-  padding: 2.5rem 0 0 0;
+  padding: 2.5rem 0;
   flex-wrap: nowrap;
   flex-direction: row;
   text-align: center;
   text-align: -moz-center;
-  text-align: -webkit-center;
+  text-align: -webkit-center
 }
 
 .service-group-box {
@@ -144,7 +188,7 @@ body {
   flex-flow: wrap;
   text-align: center;
   text-align: -moz-center;
-  text-align: -webkit-center;
+  text-align: -webkit-center
 }
 
 .service-banner {
@@ -162,7 +206,7 @@ body {
   text-align: -moz-center;
   text-align: -webkit-center;
   align-items: center;
-  box-shadow: 5px 5px 15px #dbdbdb;
+  box-shadow: 5px 5px 15px #dbdbdb
 }
 
 .service-banner:nth-of-type(2) {
@@ -180,7 +224,7 @@ body {
   text-align: -moz-center;
   text-align: -webkit-center;
   align-items: center;
-  box-shadow: 5px 5px 15px #dbdbdb;
+  box-shadow: 5px 5px 15px #dbdbdb
 }
 
 .service-list {
@@ -191,252 +235,92 @@ body {
   list-style: none;
   text-align: center;
   margin: 5% 1% 10% 1%;
-  width: 100%;
+  width: 100%
 }
 
 .grid-item {
   justify-content: center;
-  text-align: center;
+  text-align: center
 }
 
-/* service list grid item options */
-
-/* 1100px */
-
 .grid-item:nth-of-type(1) {
-  margin-right: 12%;
+  margin-right: 12%
 }
 
 .grid-item:nth-of-type(2) {
-  margin-left: 12%;
+  margin-left: 12%
 }
 
 .grid-item:nth-of-type(3) {
-  margin: -12% 50%;
+  margin: -12% 50%
 }
 
 .grid-item:nth-of-type(4) {
-  margin-right: 12%;
+  margin-right: 12%
 }
 
 .grid-item:nth-of-type(5) {
-  margin-left: 12%;
+  margin-left: 12%
 }
 
 .grid-item>dl {
   position: relative;
-  width: 360px;
+  width: 360px
 }
 
 .grid-item>dl>dt {
   position: relative;
-  width: 360px;
+  width: 360px
 }
 
 .grid-item>dl>dt>a {
   text-decoration: none;
-  vertical-align: middle;
+  vertical-align: middle
 }
 
 .ico {
-  color: #ffffff;
-  font-size: 0.75rem;
+  color: #fff;
+  font-size: .75rem;
   min-width: 115px;
   margin-top: -10px;
   padding: 3px 10px 3px 20px;
   position: absolute;
   top: 50%;
-  left: -20px;
+  left: -20px
 }
 
 .t1 {
   margin: 0;
   margin-top: 1rem;
-  padding: 0;
+  padding: 0
 }
 
 .t2 {
   color: #c9a47a;
-  font-size: 0.75rem;
+  font-size: .75rem;
   margin: 0;
-  margin-top: 0.3rem;
-  padding: 0;
+  margin-top: .3rem;
+  padding: 0
 }
 
 .service-group {
-  max-width: 400px;
+  max-width: 400px
 }
 
-.service-description {
-  font-size: 1rem;
-  margin-bottom: 1.5rem;
-}
-
-.service-facebook {
-  text-transform: uppercase;
-  font-size: 1rem;
-  color: rgb(211, 0, 127);
-  width: fit-content;
-  height: fit-content;
-  border: 2px solid #c9a47a;
-  border-radius: 25px;
-  -webkit-border-radius: 25px;
-  -moz-border-radius: 25px;
+.middles-item {
+  color: #ffffff;
+  font-size: 1.5rem;
+  max-width: 39rem;
   margin: auto;
-  margin-top: 1rem;
-  margin-right: 0.2rem;
-  padding: 10px 20px;
-  text-decoration: none;
-}
-
-.service-facebook:hover {
-  color: rgb(211, 0, 127);
-  border: 2px solid rgb(211, 0, 127);
-  transition: 0.4s;
-  -webkit-transition: all 0.4s ease 0s;
-  -moz-transition: all 0.4s ease 0s;
-  -o-transition: all 0.4s ease 0s;
-  transition: all 0.4s ease 0s;
-}
-
-.service-email {
-  text-transform: uppercase;
-  font-size: 1rem;
-  color: rgb(211, 0, 127);
-  width: fit-content;
-  height: fit-content;
-  border: 2px solid #c9a47a;
-  border-radius: 25px;
-  -webkit-border-radius: 25px;
-  -moz-border-radius: 25px;
-  margin: auto;
-  margin-top: 1rem;
-  margin-left: 0.2rem;
-  padding: 10px 20px;
-  text-decoration: none;
-}
-
-.service-email:hover {
-  color: rgb(211, 0, 127);
-  border: 2px solid rgb(211, 0, 127);
-  transition: 0.4s;
-  -webkit-transition: all 0.4s ease 0s;
-  -moz-transition: all 0.4s ease 0s;
-  -o-transition: all 0.4s ease 0s;
-  transition: all 0.4s ease 0s;
-}
-
-.class-group {
-  margin: 5rem auto;
-  margin-top: 7rem;
-}
-
-.overlay1 {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.7);
-  transition: opacity 500ms;
-  visibility: hidden;
-  opacity: 0;
-  z-index: 1000;
-}
-
-.overlay1:target {
-  visibility: visible;
-  opacity: 1;
-}
-
-.popup1 {
-  margin: 7rem auto;
-  padding: 1rem;
-  background: rgb(255, 255, 255);
-  border-radius: 1px;
-  width: 90%;
-  position: relative;
-  transition: all 5s ease-in-out;
-}
-
-.popup1 .close1 {
-  position: absolute;
-  top: 0rem;
-  right: 0.7rem;
-  transition: all 200ms;
-  font-size: 2rem;
-  font-weight: bold;
-  text-decoration: none;
-  color: #000000;
-}
-
-.popup1 .close1:hover {
-  color: rgb(253, 221, 255);
-}
-
-.popup1 {
-  overflow: auto;
-}
-
-.content1 {
-  flex-flow: row;
-  display: flex;
-}
-
-.content1>img {
-  height: 100%;
-  width: 100%;
-}
-
-.popup3 {
-  margin: 7rem auto;
-  padding: 1rem;
-  background: rgb(255, 255, 255);
-  border-radius: 1px;
-  width: 90%;
-  position: relative;
-  transition: all 5s ease-in-out;
-}
-
-.popup3 .close3 {
-  position: absolute;
-  top: 0rem;
-  right: 0.7rem;
-  transition: all 200ms;
-  font-size: 2rem;
-  font-weight: bold;
-  text-decoration: none;
-  color: #000000;
-}
-
-.popup3 .close3:hover {
-  color: rgb(253, 221, 255);
-}
-
-.popup3 {
-  overflow: auto;
-}
-
-.content3 {
-  flex-flow: row;
-  display: flex;
-}
-
-.content3>img {
-  height: 100%;
-  width: 100%;
-}
-
-.media-group {
-  margin: 0 auto;
-  margin-bottom: 7rem;
+  padding: 1rem 1rem;
+  text-shadow: -1px -1px 15px #000, 1px -1px 15px #000, -1px 1px 5px #000, 1px 1px 5px #000
 }
 
 .middles-moto0 {
   display: flex;
-  color: #000000;
+  color: #000;
   font-size: 1.5rem;
-  width: 100%;
+  width: 99.5%;
   margin: 0 auto;
   padding: 4rem 0;
   background: url(../images/soundBoard.png) no-repeat;
@@ -447,12 +331,14 @@ body {
   text-align: -moz-center;
   text-align: -webkit-center;
   align-items: center;
-  border-radius: 75px;
+  border-radius: 150px;
+  box-shadow: 5px 5px 15px #dbdbdb;
+  line-height: 1.5;
 }
 
 .middles-moto1 {
   display: flex;
-  color: #000000;
+  color: #000;
   font-size: 1.5rem;
   width: 70%;
   height: 300px;
@@ -468,30 +354,38 @@ body {
   text-align: -webkit-center;
   align-items: center;
   box-shadow: 20px 20px 15px #dbdbdb;
+  line-height: 1.5;
 }
 
 .contact-items {
-  margin: 0;
+  margin: auto;
+  line-height: 1.5;
+}
+
+#event-email>a, #event-tel>a {
+  color: #000;
+  font-size: 1.5rem;
+  text-decoration: none;
 }
 
 .footer {
   text-align: center;
   text-align: -moz-center;
-  text-align: -webkit-center;
+  text-align: -webkit-center
 }
 
 .button2 {
-  color: #000000;
-  font-size: 0.7rem;
+  color: #000;
+  font-size: .7rem;
   text-transform: none;
   text-decoration: none;
-  padding: 0 0.5rem;
+  padding: 0 .5rem;
   cursor: pointer;
-  transition: all 0.3s ease-out;
+  transition: all .3s ease-out
 }
 
 .button2:hover {
-  color: #c9a47a;
+  color: #c9a47a
 }
 
 .overlay2 {
@@ -500,16 +394,16 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.7);
-  transition: opacity 500ms;
+  background: rgba(0, 0, 0, .7);
+  transition: opacity .5s;
   visibility: hidden;
   opacity: 0;
-  z-index: 1000;
+  z-index: 1000
 }
 
 .overlay2:target {
   visibility: visible;
-  opacity: 1;
+  opacity: 1
 }
 
 .overlay3 {
@@ -518,54 +412,54 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.7);
-  transition: opacity 500ms;
+  background: rgba(0, 0, 0, .7);
+  transition: opacity .5s;
   visibility: hidden;
   opacity: 0;
-  z-index: 1000;
+  z-index: 1000
 }
 
 .overlay3:target {
   visibility: visible;
-  opacity: 1;
+  opacity: 1
 }
 
 .popup2 {
   margin: 7rem auto;
   padding: 1rem;
-  background: rgb(255, 255, 255);
+  background: #fff;
   border-radius: 1px;
   width: 30%;
   position: relative;
-  transition: all 5s ease-in-out;
+  transition: all 5s ease-in-out
 }
 
 .popup2 .close2 {
   position: absolute;
-  top: 0rem;
-  right: 0.7rem;
-  transition: all 200ms;
+  top: 0;
+  right: .7rem;
+  transition: all .2s;
   font-size: 2rem;
-  font-weight: bold;
+  font-weight: 700;
   text-decoration: none;
-  color: #000000;
+  color: #000
 }
 
 .popup2 .close2:hover {
-  color: rgb(253, 221, 255);
+  color: #fdddff
 }
 
 .popup2 .content2 {
   max-height: 30%;
-  overflow: auto;
+  overflow: auto
 }
 
 .content2>div {
-  margin-bottom: 0.5rem;
+  margin-bottom: .5rem
 }
 
 #to-the-top {
-  font-family: "Quantico", sans-serif;
+  font-family: Quantico, sans-serif;
   font-weight: 400;
   font-size: 1.5rem;
   position: fixed;
@@ -573,9 +467,9 @@ body {
   bottom: 1.5rem;
   text-transform: uppercase;
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: #fff;
   z-index: 1000;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000
 }
 
 #nav {
@@ -585,32 +479,32 @@ body {
   display: flex;
   justify-content: space-around;
   margin: auto;
-  padding: 0 0 0.5rem 0;
-  mix-blend-mode: difference;
+  padding: 0 0 .5rem 0;
+  mix-blend-mode: difference
 }
 
 #nav li a {
-  color: rgb(255, 255, 255);
-  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-family: Montserrat, sans-serif;
   font-weight: 400;
   font-size: 1rem;
   text-transform: uppercase;
   text-decoration: none;
-  text-shadow: 0px 0px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 0px 0px 0 #000;
+  text-shadow: 0 0 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 0 0 0 #000
 }
 
 #header-title-0 {
-  font-family: "Monoton";
+  font-family: Monoton;
   font-size: 9rem;
-  color: rgb(255, 255, 255);
+  color: #fff;
   padding-top: 0;
   text-align: center;
   text-align: -moz-center;
-  text-align: -webkit-center;
+  text-align: -webkit-center
 }
 
 #header-title-0:nth-child(1) {
-  font-family: "Monoton";
+  font-family: Monoton;
   font-weight: 400;
   font-size: 8rem;
   margin: 0;
@@ -624,14 +518,14 @@ body {
   -moz-animation: color-change 30s infinite;
   -o-animation: color-change 30s infinite;
   -ms-animation: color-change 30s infinite;
-  animation: color-change 30s infinite;
+  animation: color-change 30s infinite
 }
 
 #header-title-1 {
   text-align: center;
   text-align: -moz-center;
   text-align: -webkit-center;
-  justify-content: center;
+  justify-content: center
 }
 
 #header-sub-title-0 {
@@ -641,57 +535,47 @@ body {
   width: 35rem;
   color: #270c17;
   background-color: transparent;
-  border-radius: 0.3rem;
+  border-radius: .3rem;
   margin: 0 auto;
   text-align: center;
   text-align: -moz-center;
-  text-align: -webkit-center;
+  text-align: -webkit-center
 }
 
 #header-sub-title-1 {
-  font-family: "Merienda";
+  font-family: Merienda;
   font-size: 1.25rem;
   font-weight: 500;
   text-transform: uppercase;
   width: 35rem;
-  color: rgb(255, 255, 255);
+  color: #fff;
   background-color: transparent;
-  border-radius: 0.3rem;
-  margin: 0.3rem auto;
+  border-radius: .3rem;
+  margin: .3rem auto;
   text-align: center;
   text-align: -moz-center;
-  text-align: -webkit-center;
-  -----
-}
-
-#galatians {
-  font-size: 0.95rem;
-  text-transform: uppercase;
-  color: #ffffff;
-  margin: auto;
-  margin-top: 1.5rem;
-  width: 20rem;
+  text-align: -webkit-center
 }
 
 #about-text {
   display: table;
-  font-family: 'Quantico';
+  font-family: Quantico;
   font-size: 3rem;
   font-weight: 400;
-  color: #000000;
+  color: #000;
   width: fit-content;
   margin: auto;
   padding: 0;
   text-align: center;
   text-transform: uppercase;
-  border-bottom: 5px solid #299eb6;
+  border-bottom: 5px solid #299eb6
 }
 
 #about-link {
   color: #299eb6;
   font-size: 1.2rem;
   font-weight: 400;
-  text-decoration: none;
+  text-decoration: none
 }
 
 #about-introduce {
@@ -701,8 +585,7 @@ body {
   text-align: center;
   text-align: -moz-center;
   text-align: -webkit-center;
-  line-height: 1.7;
-  -----
+  line-height: 1.7
 }
 
 #about-contact {
@@ -711,612 +594,359 @@ body {
   text-align: center;
   text-align: -moz-center;
   text-align: -webkit-center;
-  text-transform: uppercase;
-  -----
+  text-transform: uppercase
 }
 
 #about-contact-button {
   font-size: 1rem;
   width: fit-content;
-  border: 2px solid rgba(137, 137, 137, 0.5);
+  border: 2px solid rgba(137, 137, 137, .5);
   border-radius: 25px;
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
   padding: 15px 25px;
-  text-decoration: none;
-  -----
+  text-decoration: none
 }
 
 #about-contact-button:nth-child(2) {
-  color: #c9a47a;
+  color: #c9a47a
 }
 
 #about-contact-button:hover {
   background-color: transparent;
   border: 2px solid #c9a47a;
-  transition: 0.4s;
-  -webkit-transition: all 0.4s ease 0s;
-  -moz-transition: all 0.4s ease 0s;
-  -o-transition: all 0.4s ease 0s;
-  transition: all 0.4s ease 0s;
+  transition: .4s;
+  -webkit-transition: all .4s ease 0s;
+  -moz-transition: all .4s ease 0s;
+  -o-transition: all .4s ease 0s;
+  transition: all .4s ease 0s
 }
 
 #about-contact-button:nth-child(2):hover {
-  color: rgb(211, 0, 127);
-}
-
-#service-picture {
-  /* max-width: 750px;
-  max-height: 1250px; */
+  color: #d3007f
 }
 
 #service-text {
-  font-family: 'Quantico';
+  font-family: Quantico;
   font-weight: 400;
-  font-size: 3.25rem;
-  color: #000000;
+  font-size: 3.5rem;
+  color: #000;
   width: fit-content;
   margin: auto;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   text-transform: uppercase;
-  border-bottom: 5px solid #c9a47a;
+  border-bottom: 5px solid #c9a47a
 }
 
 #service-text0 {
   font-weight: 400;
   font-size: 1.2rem;
-  color: #000000;
+  color: #000;
   width: fit-content;
   margin: auto;
   margin-top: 5rem;
-  text-transform: uppercase;
+  text-transform: uppercase
 }
 
 #service-text1 {
-  font-family: "Montserrat";
-  font-size: 1.75rem;
-  font-weight: 900;
-  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 1.5rem;
+  color: #fff;
   width: 50%;
   min-width: 420px;
   height: fit-content;
   margin: auto;
   text-align: center;
   line-height: 1.9;
-  border: 5px solid #c9a47a;
-  border-radius: 27.5px;
+  border: 3px solid #c9a47a;
+  border-radius: 27.5px
 }
 
 #service-text2 {
-  font-family: "Montserrat";
-  font-size: 1.75rem;
-  font-weight: 900;
-  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 1.5rem;
+  color: #fff;
   width: 360px;
   height: 360px;
   margin: auto;
   padding: 2rem;
   text-align: center;
   line-height: 1.9;
-  border: 5px solid #4041aa;
+  border: 3px solid #4041aa;
   border-radius: 1000px;
-  justify-content: flex-end;
+  justify-content: flex-end
 }
 
 #service-text-highlight0 {
-  font-family: "Montserrat";
+  font-family: Montserrat;
   font-weight: 900;
   color: #c9a47a;
   font-size: 1.5rem;
   font-weight: 400;
-  text-decoration: none;
+  text-decoration: none
 }
 
 #service-text-highlight1 {
-  font-family: "Montserrat";
+  font-family: Montserrat;
   font-weight: 900;
   color: #4041aa;
   font-size: 1.5rem;
   font-weight: 400;
-  text-decoration: none;
+  text-decoration: none
 }
 
 #middles-items-music {
-  box-shadow: 1px 1px 50px #000000;
+  box-shadow: 1px 1px 50px #000
 }
 
 #hashtag {
-  font-weight: 900;
+  font-weight: 900
 }
-
-/* ico box color */
 
 #ico0 {
   color: #000;
-  background: #e9f9fe;
+  background: #e9f9fe
 }
 
 #ico1 {
-  background: #9197a9;
+  background: #9197a9
 }
 
 #ico2 {
-  background: #e59f78;
+  background: #e59f78
 }
 
 #ico3 {
-  background: #d4cd81;
+  background: #d4cd81
 }
 
 #ico4 {
-  background: #8812b6;
-}
-
-#class-leaders {
-  width: 70%;
-}
-
-#leader-text0 {
-  font-weight: 400;
-  font-size: 2rem;
-  color: #000000;
-  width: 100%;
-  margin: 2rem auto;
-  text-transform: uppercase;
-}
-
-#leader-text-highlight {
-  color: rgb(211, 0, 127);
-  font-size: 1.2rem;
-  font-weight: 400;
-  text-decoration: none;
+  background: #8812b6
 }
 
 #service-text0 {
   font-weight: 400;
   font-size: 2rem;
-  color: #000000;
+  color: #000;
   width: 100%;
   margin: 2rem auto;
-  text-transform: uppercase;
-}
-
-#media-text0 {
-  font-weight: 400;
-  font-size: 2rem;
-  color: #000000;
-  width: 100%;
-  margin: 2rem auto;
-  text-transform: uppercase;
-}
-
-#media-text1 {
-  font-size: 1rem;
-  color: #000000;
-  width: 40%;
-  height: fit-content;
-  margin: auto;
-  margin-top: 2rem;
-  text-align: center;
-  border-right: 2px solid #c9a47a;
-  border-left: 2px solid #c9a47a;
-  line-height: 1.7;
-}
-
-#media-text-highlight {
-  color: rgb(211, 0, 127);
-  font-size: 1.2rem;
-  font-weight: 400;
-  text-decoration: none;
-}
-
-#service-facebook-1 {
-  background: url() no-repeat 50px;
-  background-position: 3.15rem 1.1rem;
-  background-size: 230px;
+  text-transform: uppercase
 }
 
 #contact-text {
-  font-size: 3rem;
+  font-family: "Quantico";
+  color: #5d90ca;
+  font-size: 4rem;
   font-weight: 400;
-  color: rgb(255, 255, 255);
   width: fit-content;
-  margin: 5rem auto;
-  margin-top: 12rem;
+  position: relative;
+  margin: 3rem 0;
+  margin-bottom: 2rem;
   text-transform: uppercase;
-}
-
-#contact-paragraph {
-  color: rgb(255, 255, 255);
-  font-size: 1rem;
-  margin: 3rem 5rem;
-  width: 25rem;
-  line-height: 1.8;
-}
-
-#event-link {
-  width: fit-content;
-  margin: 0 auto;
-}
-
-#contact-facebook-link, #contact-event-link {
-  font-size: 1.3rem;
-  font-weight: bold;
-  color: #f7c893;
-  margin-bottom: 1rem;
-  text-decoration: none;
-}
-
-#contact-facebook-link:hover, #contact-event-link:hover {
-  color: rgb(232, 247, 255);
-  transition: 0.4s;
-  -webkit-transition: all 0.4s ease 0s;
-  -moz-transition: all 0.4s ease 0s;
-  -o-transition: all 0.4s ease 0s;
-  transition: all 0.4s ease 0s;
-}
-
-#contact-event-link:first-child {
-  margin-right: 0.3rem;
-}
-
-#contact-event-link:nth-child(1) {
-  margin-right: 0.3rem;
-}
-
-#contact-link {
-  color: #c9a47a;
+  border-bottom: 5px solid #4041aa;
+  mix-blend-mode: difference;
+  -webkit-animation: color-change 30s infinite;
+  -moz-animation: color-change 30s infinite;
+  -o-animation: color-change 30s infinite;
+  -ms-animation: color-change 30s infinite;
+  animation: color-change 30s infinite;
 }
 
 #credit2 {
   font-size: 1.1rem;
-  color: #000000;
+  color: #000;
   text-transform: none;
   text-decoration: none;
-  margin-top: 1rem;
+  margin-top: 1rem
 }
 
 #credit2:hover {
-  color: rgb(253, 0, 109);
-  transition: 0.4s;
-  -webkit-transition: all 0.4s ease 0s;
-  -moz-transition: all 0.4s ease 0s;
-  -o-transition: all 0.4s ease 0s;
-  transition: all 0.4s ease 0s;
+  color: #fd006d;
+  transition: .4s;
+  -webkit-transition: all .4s ease 0s;
+  -moz-transition: all .4s ease 0s;
+  -o-transition: all .4s ease 0s;
+  transition: all .4s ease 0s
 }
 
-#music {
-  display: none;
-  -webkit-transition: all 0.5s linear;
-  -moz-transition: all 0.5s linear;
-  -o-transition: all 0.5s linear;
-  transition: all 0.5s linear;
-}
-
-#music-button {
-  display: -webkit-inline-box;
-  display: inline-block;
-  font-size: 1.8rem;
-  right: 1.9rem;
-  bottom: 3.1rem;
-  position: fixed;
-  border: none;
-  background-color: transparent;
-  z-index: 1000;
-}
-
-#music-button:focus, #music-button:active {
-  background: none;
-  outline: none;
-}
-
-@media (min-width: 1500px) {
-  #about-introduce {
-    margin: 2rem 30%;
-    max-width: 50rem;
-  }
+@media (min-width:1500px) {
   #service-text1 {
-    max-width: 50rem;
+    max-width: 50rem
   }
   #service-text2 {
-    max-width: 50rem;
+    max-width: 50rem
   }
 }
 
-@media (max-width: 900px) {
-  .button0 {
-    font-size: 1.2rem;
-    top: 13rem;
-    right: 3rem;
-  }
-  .popup0 {
-    width: 50%;
-  }
+@media (max-width:900px) {
   .header {
-    background-attachment: local;
-  }
-  .popup1 {
-    margin: 10% auto;
-    width: 40%;
-  }
-  .popup3 {
-    margin: 10% auto;
-    width: 40%;
-  }
-  .content1 {
-    flex-flow: column;
-    display: flex;
+    background-attachment: local
   }
   .contact {
-    background-attachment: local;
+    background-attachment: local
   }
   .middles-moto0 {
-    background-attachment: local;
+    background-attachment: local
   }
   .middles-moto1 {
-    background-attachment: local;
+    background-attachment: local
   }
   .wrapper-logo {
     margin: auto;
     left: 20px;
-    top: 40px;
+    top: 40px
   }
   .wrapper-logo img {
-    width: 60px;
+    width: 60px
   }
   .header-title-0 {
-    font-size: 5rem;
+    font-size: 5rem
   }
   .middles-item {
     background-color: transparent;
     color: #fff;
     font-size: 1.5rem;
-    text-shadow: 3px 1px #000, 3px 1px #000, 3px 1px #000, 3px 1px #000;
+    text-shadow: 3px 1px #000, 3px 1px #000, 3px 1px #000, 3px 1px #000
   }
   .contact {
-    background-attachment: local;
-  }
-  .service-group0 {
-    padding: 0;
+    background-attachment: local
   }
   .service {
     background-size: auto;
     background-attachment: local;
-    background-repeat: repeat-y;
-  }
-  .content3 {
-    flex-flow: column;
-    display: flex;
-  }
-  .class-group {
-    margin-bottom: 1.5rem;
-  }
-  .portflio-facebook {
-    margin-bottom: 1rem;
+    background-repeat: repeat-y
   }
   .img {
-    width: 100%;
+    width: 100%
   }
   .popup2 {
-    width: 50%;
-  }
-  #credit0 {
-    font-size: 0.9rem;
-    margin: 3rem;
+    width: 50%
   }
   #nav {
     width: 90%;
-    margin-top: -0.5rem;
+    margin-top: -.5rem
   }
   #header-title-0:nth-child(1) {
-    font-size: 5.5rem;
+    font-size: 5.5rem
   }
   #header-sub-title-0 {
-    font-size: 0.7rem;
-    width: fit-content;
+    font-size: .7rem;
+    width: fit-content
   }
   #header-sub-title-1 {
-    font-size: 0.7rem;
-    width: fit-content;
-  }
-  #galatians {
-    font-size: 0.55rem;
-    margin: auto;
-    margin-top: 1rem;
-    width: 12rem;
+    font-size: .7rem;
+    width: fit-content
   }
   #about-introduce {
     margin: 1rem 10%;
-    margin-bottom: 2rem;
+    margin-bottom: 2rem
   }
   #about-contact-button {
     margin: 0;
-    margin-left: 10%;
+    margin-left: 10%
   }
   #about-contact-button:nth-child(2) {
     margin: 0;
-    margin-right: 10%;
+    margin-right: 10%
   }
   #service-group {
     order: 2;
-    -webkit-order: 2;
-  }
-  #service-description {
-    order: 4;
-    -webkit-order: 4;
-  }
-  #service-facebook {
-    order: 5;
-    -webkit-order: 5;
-  }
-  #service-email {
-    order: 6;
-    -webkit-order: 6;
-  }
-  #class-leaders {
-    width: 100%;
-  }
-  #leader-text1 {
-    width: 56%;
+    -webkit-order: 2
   }
   #service-text1 {
     min-width: 80%;
-    margin-top: 1rem;
+    margin-top: 1rem
   }
   #service-text2 {
     min-width: 80%;
-    margin-top: 1rem;
+    margin-top: 1rem
   }
   #contact-text {
-    margin: 3rem auto;
-  }
-  #contact-paragraph {
-    font-size: 0.9rem;
-    max-width: 300px;
-    margin: auto;
-  }
-  #contact-facebook-link, #contact-event-link {
-    font-size: 1.1rem;
-  }
-  #music-button {
-    display: none;
+    margin: 3rem auto
   }
 }
 
-@media (max-width: 550px) {
-  .button0 {
-    font-size: 0.75rem;
-    top: 10rem;
-    right: 1rem;
-  }
-  .popup0 {
-    width: 90%;
-    padding: 0.5rem;
-  }
+@media (max-width:550px) {
   .wrapper {
-    opacity: 1;
+    opacity: 1
   }
   .wrapper-logo {
     left: 10px;
-    top: 25px;
+    top: 25px
   }
   .wrapper-logo img {
-    width: 30px;
+    width: 30px
   }
   .header {
     padding-top: 200px;
-    padding-bottom: 200px;
+    padding-bottom: 200px
   }
   .service {
-    background-attachment: fixed;
+    background-attachment: fixed
   }
   .service-group {
-    margin: auto;
+    margin: auto
   }
   .service-group {
-    padding: 0;
-  }
-  .content1 {
-    flex-flow: column;
-    display: flex;
+    padding: 0
   }
   .contact {
-    font-size: 0.7rem;
+    font-size: .7rem;
     width: 100%;
-    margin: auto;
+    margin: auto
   }
   .middles-moto0 {
-    font-size: 0.7rem;
+    font-size: .7rem;
     margin: auto;
-    padding: 2rem 0px;
+    padding: 2rem 0
   }
   .middles-moto1 {
-    font-size: 0.7rem;
+    font-size: .7rem;
     margin: auto;
-    padding: 2rem 0px;
-  }
-  .content3 {
-    flex-flow: column;
-    display: flex;
+    padding: 2rem 0
   }
   .contact {
-    padding: 272px 0;
-  }
-  .popup1 {
-    margin: auto;
-    width: 80%;
+    padding: 272px 0
   }
   .popup2 {
     width: 90%;
-    margin: 5rem auto;
-  }
-  .popup3 {
-    margin: auto;
-    width: 80%;
+    margin: 5rem auto
   }
   #nav {
     width: 88%;
-    margin-top: -1rem;
+    margin-top: -1rem
   }
   #nav li a {
-    font-size: 0.75rem;
+    font-size: .75rem
   }
   #header-title-0:nth-child(1) {
-    font-size: 3rem;
+    font-size: 3rem
   }
   #about-contact-button {
-    font-size: 0.75rem;
-    margin: 0;
+    font-size: .75rem;
+    margin: 0
   }
   #about-contact-button:nth-child(2) {
-    font-size: 0.75rem;
-    margin: 0;
-  }
-  #class-leaders {
-    width: 100%;
-  }
-  #leader-text0 {
-    font-size: 1.8rem;
-    margin: 1.5rem auto;
-  }
-  #leader-text1 {
-    width: 77%;
-  }
-  #service-text0 {
-    font-size: 1.5rem;
-    margin: 1.2rem auto;
+    font-size: .75rem;
+    margin: 0
   }
   #service-text1 {
-    font-size: 0.9rem;
+    font-size: .9rem;
     width: 70%;
     min-width: 80%;
-    margin-top: 1rem;
+    margin-top: 1rem
   }
   #service-text2 {
-    font-size: 0.9rem;
+    font-size: .9rem;
     width: 70%;
     min-width: 80%;
-    margin-top: 1rem;
-  }
-  #media-text1 {
-    width: 77%;
+    margin-top: 1rem
   }
   #contact-text {
-    margin: 2rem auto;
-  }
-  #contact-paragraph {
-    font-size: 0.9rem;
-    margin: 2rem auto;
-  }
-  #contact-facebook-link, #contact-event-link {
-    font-size: 1rem;
-  }
-  #music-button {
-    right: 1.2rem;
-    bottom: 2.75rem;
+    margin: 2rem auto
   }
   #to-the-top {
-    right: 0.75rem;
-    bottom: 0.5rem;
+    right: .75rem;
+    bottom: .5rem
   }
 }
