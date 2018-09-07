@@ -343,7 +343,7 @@ body {
   width: 70%;
   height: 300px;
   margin: 5rem auto;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.5rem;
   padding: 4rem 0;
   background: url(../images/ccm0.jpg) no-repeat;
   background-size: cover;
@@ -363,6 +363,7 @@ body {
 }
 
 #event-email>a, #event-tel>a {
+  display: inline-block;
   color: #000;
   font-size: 1.5rem;
   text-decoration: none;
@@ -483,11 +484,13 @@ body {
   mix-blend-mode: difference;
 }
 
-#nav li a {
+#nav>li>a {
+  display: inline-block;
   color: #fff;
   font-family: Montserrat, sans-serif;
   font-weight: 400;
   font-size: 1rem;
+  min-width: 83px;
   text-transform: uppercase;
   text-decoration: none;
   text-shadow: 0 0 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 0 0 0 #000;
@@ -529,7 +532,7 @@ body {
 }
 
 #header-sub-title-0 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 800;
   text-transform: uppercase;
   width: 35rem;
@@ -573,13 +576,13 @@ body {
 
 #about-link {
   color: #299eb6;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 400;
   text-decoration: none;
 }
 
 #about-introduce {
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin: 2.2rem 25%;
   margin-top: 2rem;
   text-align: center;
@@ -629,7 +632,7 @@ body {
 #service-text {
   font-family: Quantico;
   font-weight: 400;
-  font-size: 3.5rem;
+  font-size: 3rem;
   color: #000;
   width: fit-content;
   margin: auto;
@@ -778,7 +781,7 @@ body {
   }
 }
 
-@media (max-width:900px) {
+@media (max-width:1024px) {
   .header {
     background-attachment: local;
   }
@@ -808,7 +811,7 @@ body {
     background-color: transparent;
     color: #fff;
     font-size: 1.5rem;
-    text-shadow: 3px 1px #000, 3px 1px #000, 3px 1px #000, 3px 1px #000;
+    text-shadow: 1px 1px #000, 1px 1px #000, 1px 1px #000, 1px 1px #000;
   }
   .contact {
     background-attachment: local;
@@ -821,9 +824,11 @@ body {
   }
   .service-banner {
     height: 600px;
+    background-attachment: local;
   }
   .service-banner:nth-of-type(2) {
     height: 600px;
+    background-attachment: local;
   }
   .service-group-box {
     justify-content: space-evenly;
@@ -870,9 +875,10 @@ body {
     margin: 2.5rem auto 3rem auto;
     padding-top: 1rem;
     padding-bottom: 0.25rem;
+    background-attachment: local;
   }
   .cooperator-text {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
   .cooperator-item>a>img {
     width: 65px;
@@ -902,7 +908,6 @@ body {
     font-size: 2rem;
   }
   #about-introduce {
-    font-size: 1.2rem;
     margin: 1rem 10%;
     margin-bottom: 2rem;
   }
@@ -966,9 +971,11 @@ body {
   }
   .service-banner {
     height: 500px;
+    background-attachment: local;
   }
   .service-banner:nth-of-type(2) {
     height: 500px;
+    background-attachment: local;
   }
   .service {
     background-attachment: fixed;
@@ -986,12 +993,13 @@ body {
     font-size: .7rem;
     margin: auto;
     padding: 0.75rem 0;
+    box-shadow: 3px 3px 3px #dbdbdb;
   }
   .middles-moto1 {
     font-size: .7rem;
     height: 260px;
     margin: 3rem auto;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.2rem;
     padding: 2rem 0;
   }
   .cooperator {
@@ -1012,6 +1020,7 @@ body {
   .popup2 {
     width: 90%;
     margin: 5rem auto;
+    margin-top: 14rem;
   }
   #nav {
     width: 88%;
@@ -1024,10 +1033,10 @@ body {
     font-size: 3rem;
   }
   #about-introduce {
-    font-size: 0.85rem;
+    font-size: 0.75rem;
   }
   #about-link {
-    font-size: 0.95rem;
+    font-size: 0.85rem;
   }
   #about-contact-button {
     font-size: .75rem;
@@ -1038,7 +1047,7 @@ body {
     margin: 0;
   }
   #middles-items-music {
-    font-size: 1rem;
+    font-size: 0.75rem;
   }
   #service-text {
     font-size: 2rem;
@@ -1053,12 +1062,16 @@ body {
     width: 250px;
     height: 250px;
   }
+  #hashtag {
+    font-size: 0.75rem;
+  }
   #contact-text {
-    font-size: 2rem;
+    font-size: 2.75rem;
     margin: 1rem auto;
   }
   #event-email>a, #event-tel>a {
     font-size: 1rem;
+    min-width: 226.88px;
   }
   #to-the-top {
     right: .75rem;
