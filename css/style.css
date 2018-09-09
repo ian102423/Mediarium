@@ -109,9 +109,9 @@ body {
   display: flex;
   color: #000;
   font-size: 1.5rem;
-  width: 99.5%;
+  width: 85%;
   margin: 0 auto;
-  padding: 4rem 0;
+  padding: 3rem 0;
   background: url(../images/soundBoard.png) no-repeat;
   background-size: 100%;
   background-position: center;
@@ -307,7 +307,7 @@ body {
   /* background-color: #4041aa #b8efe4
   #c9a47a; */
   flex-wrap: wrap;
-  width: 97.5%;
+  width: 85%;
   margin: 2.5rem auto 3rem auto;
   padding: 1.25rem 0;
   padding-bottom: 0.5rem;
@@ -776,7 +776,46 @@ body {
   transition: all .4s ease 0s;
 }
 
-@media (min-width:1500px) {
+@media (min-width:1920px) {
+  .header {
+    padding-top: 500px;
+    padding-bottom: 500px;
+  }
+  .middles-moto-0 {
+    width: 55%;
+  }
+  .service-list {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  .service-banner {
+    height: 800px;
+  }
+  .service-banner:nth-of-type(2) {
+    height: 800px;
+  }
+  .middles-moto-1 {
+    width: 55%;
+  }
+  .cooperator {
+    width: 55%;
+  }
+  .contact {
+    padding: 20rem 0;
+    padding-top: 18rem;
+  }
+  #header-title-0:nth-child(1) {
+    font-size: 10rem;
+  }
+  #header-sub-title-0 {
+    font-size: 1.5rem;
+  }
+  #header-sub-title-1 {
+    font-size: 1.5rem;
+  }
+  #about-introduce {
+    margin: 2.2rem 33%;
+  }
   #service-text-1 {
     max-width: 50rem;
   }
@@ -992,6 +1031,7 @@ body {
   }
   .middles-moto-0 {
     font-size: .7rem;
+    width: 99.5%;
     margin: auto;
     padding: 0.75rem 0;
     box-shadow: 3px 3px 3px #dbdbdb;
