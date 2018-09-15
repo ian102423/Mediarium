@@ -80,8 +80,8 @@ body {
   width: fit-content;
   margin: 0 0 0 2.5rem;
   position: absolute;
-  left: 0;
-  top: 0;
+  left: -5px;
+  top: 25px;
 }
 
 .header {
@@ -94,8 +94,8 @@ body {
   background-position: center;
   position: relative;
   margin-top: -1.5rem;
-  padding-top: 250px;
-  padding-bottom: 250px;
+  padding-top: 300px;
+  padding-bottom: 200px;
   box-shadow: 10px 10px 30px #dbdbdb;
 }
 
@@ -175,7 +175,7 @@ body {
 
 .service {
   border-radius: 0;
-  padding: 2.5rem 0 0 0;
+  padding: 5rem 0 0 0;
   flex-wrap: nowrap;
   flex-direction: row;
   text-align: center;
@@ -324,17 +324,17 @@ body {
 }
 
 .cooperator-text {
-  color: #ffffff;
-  font-family: "Quantico";
+  color: #1c0912;
+  font-family: Futura, sans-serif;
   font-size: 1.75rem;
+  font-weight: 300;
   width: fit-content;
   margin: 0 auto;
   margin-bottom: 0.5rem;
   padding: 0 1rem;
   text-transform: uppercase;
-  border-right: 1.5px solid #ffffff;
-  border-left: 1.5px solid #ffffff;
-  mix-blend-mode: difference;
+  border-right: 1.5px solid #1c0912;
+  border-left: 1.5px solid #1c0912;
 }
 
 .cooperator-box {
@@ -380,6 +380,7 @@ body {
 }
 
 #event-email>a, #event-tel>a {
+  font-family: Futura, sans-serif;
   display: inline-block;
   color: #000;
   font-size: 1.5rem;
@@ -470,7 +471,7 @@ body {
 }
 
 #to-the-top {
-  font-family: Quantico, sans-serif;
+  font-family: Futura, sans-serif;
   font-weight: 400;
   font-size: 1.5rem;
   position: fixed;
@@ -526,7 +527,11 @@ body {
   text-align: -moz-center;
   text-align: -webkit-center;
   text-decoration: none;
-  mix-blend-mode: difference;
+  /* mix-blend-mode: difference; */
+}
+
+#header-title-0>img {
+  width: 45%;
 }
 
 #header-title-1 {
@@ -567,8 +572,8 @@ body {
 
 #about-text {
   display: table;
-  font-family: Quantico;
-  font-size: 3rem;
+  font-family: Futura, sans-serif;
+  font-size: 2.5rem;
   font-weight: 400;
   color: #000;
   width: fit-content;
@@ -635,13 +640,13 @@ body {
 }
 
 #service-text {
-  font-family: Quantico;
+  font-family: Futura, sans-serif;
   font-weight: 400;
   font-size: 3rem;
   color: #000;
   width: fit-content;
   margin: auto;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   text-transform: uppercase;
   border-bottom: 5px solid #c9a47a;
 }
@@ -657,8 +662,9 @@ body {
 }
 
 #service-text-1 {
-  font-family: Montserrat, sans-serif;
+  /* font-family: Futura, sans-serif; */
   font-size: 1.5rem;
+  font-weight: 600;
   color: #fff;
   width: 50%;
   min-width: 420px;
@@ -667,7 +673,11 @@ body {
   text-align: center;
   line-height: 1.9;
   border: 3px solid #c9a47a;
-  border-radius: 27.5px;
+  /* border-radius: 27.5px; */
+}
+
+#service-text-1>a {
+  font-weight: 600;
 }
 
 #service-text-2 {
@@ -686,8 +696,7 @@ body {
 }
 
 #service-text-highlight-0 {
-  font-family: Montserrat, sans-serif;
-  font-weight: 900;
+  /* font-family: Montserrat, sans-serif; */
   color: #c9a47a;
   font-size: 1.5rem;
   font-weight: 400;
@@ -696,7 +705,6 @@ body {
 
 #service-text-highlight-1 {
   font-family: Montserrat, sans-serif;
-  font-weight: 900;
   color: #4041aa;
   font-size: 1.5rem;
   font-weight: 400;
@@ -742,9 +750,9 @@ body {
 }
 
 #contact-text {
-  font-family: "Quantico";
+  font-family: Futura, sans-serif;
   color: #5d90ca;
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: 400;
   width: fit-content;
   position: relative;
@@ -778,11 +786,15 @@ body {
 
 @media (min-width:1920px) {
   .wrapper-logo {
-    top: 25px;
+    top: 45px;
+    left: 45px;
+  }
+  .wrapper-logo>img {
+    width: 200px;
   }
   .header {
-    padding-top: 500px;
-    padding-bottom: 500px;
+    padding-top: 450px;
+    padding-bottom: 350px;
   }
   .middles-moto-0 {
     width: 55%;
@@ -846,10 +858,14 @@ body {
   .wrapper-logo {
     margin: auto;
     left: 30px;
-    top: 60px;
+    top: 50px;
   }
   .wrapper-logo img {
-    width: 100px;
+    width: 125px;
+  }
+  .header {
+    padding-top: 400px;
+    padding-bottom: 300px;
   }
   .middles-item {
     background-color: transparent;
@@ -1006,8 +1022,8 @@ body {
     width: 75px;
   }
   .header {
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 300px;
+    padding-bottom: 250px;
   }
   .about {
     padding: 2rem 0 5rem 0;
@@ -1080,6 +1096,9 @@ body {
   }
   #header-title-0:nth-child(1) {
     font-size: 3rem;
+  }
+  #header-title-0>img {
+    width: 90%;
   }
   #about-introduce {
     font-size: 0.75rem;
