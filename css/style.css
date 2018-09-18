@@ -196,8 +196,8 @@ body {
   font-size: 1.5rem;
   display: flex;
   width: 100%;
-  height: 400px;
   margin: 0 auto;
+  padding: 5rem 0;
   background: url(../images/mix.jpg) no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -252,7 +252,7 @@ body {
 }
 
 .grid-item:nth-of-type(3) {
-  margin: -12% 50%;
+  margin: -20% 50% -20% 50%;
 }
 
 .grid-item:nth-of-type(4) {
@@ -297,10 +297,21 @@ body {
 
 .t2 {
   color: #c9a47a;
-  font-size: .75rem;
+  font-size: 0.9rem;
   margin: 0;
   margin-top: .3rem;
   padding: 0;
+  line-height: 2;
+}
+
+.t3 {
+  width: 80%;
+  color: #000;
+  font-size: .7rem;
+  margin: auto;
+  margin-top: .3rem;
+  padding: 0;
+  line-height: 1.75;
 }
 
 .cooperator {
@@ -670,9 +681,12 @@ body {
   min-width: 420px;
   height: fit-content;
   margin: auto;
+  padding: 1.5rem 0;
   text-align: center;
   line-height: 1.9;
   border: 3px solid #c9a47a;
+  background-color: rgb(0, 0, 0, 0.5);
+  box-shadow: 1px 1px 10px #000;
   /* border-radius: 27.5px; */
 }
 
@@ -703,6 +717,29 @@ body {
   text-decoration: none;
 }
 
+#service-text-description-1 {
+  width: 50%;
+  color: #fff;
+  font-size: 0.9rem;
+  margin: auto;
+  margin-top: 2rem;
+  line-height: 2;
+}
+
+#service-text-bottom {
+  color: #fff;
+  margin: auto;
+}
+
+#t3-nashville {
+  width: 92%;
+  font-size: .65rem;
+}
+
+#t2-tech {
+  line-height: 1.5;
+}
+
 #service-text-highlight-1 {
   font-family: Montserrat, sans-serif;
   color: #4041aa;
@@ -711,12 +748,28 @@ body {
   text-decoration: none;
 }
 
+#service-text-description-2 {
+  width: 75%;
+  color: #fff;
+  font-size: 1rem;
+  margin: auto;
+  margin-top: 0.5rem;
+  line-height: 2;
+}
+
 #middles-items-music {
   box-shadow: 1px 1px 25px #000;
 }
 
 #hashtag {
   font-weight: 900;
+}
+
+#middles-items-ccm {
+  width: 60%;
+  font-size: 1rem;
+  line-height: 1.75;
+  box-shadow: 1px 1px 25px #000;
 }
 
 #ico0 {
@@ -836,6 +889,9 @@ body {
   }
   #service-text-2 {
     max-width: 50rem;
+  }
+  #middles-items-ccm {
+    width: 50%;
   }
 }
 
@@ -999,6 +1055,18 @@ body {
   #service-text-highlight-0 {
     font-size: 0.75rem;
   }
+  #service-text-description-1 {
+    width: 60%;
+    font-size: 0.75rem;
+    margin-top: 1.5rem;
+  }
+  #service-text-bottom {
+    font-size: 0.75rem;
+  }
+  #service-text-description-2 {
+    width: 90%;
+    font-size: 0.75rem;
+  }
   #contact-text {
     font-size: 2.5rem;
     margin: 3rem auto;
@@ -1063,6 +1131,9 @@ body {
     padding: 0;
     box-shadow: 1px 1px 10px #dbdbdb;
   }
+  .t3 {
+    width: 100%;
+  }
   .cooperator {
     width: 95%;
     box-shadow: 1px 1px 10px #dbdbdb;
@@ -1126,13 +1197,23 @@ body {
     width: 70%;
     min-width: 80%;
   }
+  #t3-nashville {
+    width: 100%;
+  }
   #service-text-2 {
     font-size: .9rem;
     width: 250px;
     height: 250px;
   }
+  #service-text-description-1 {
+    width: 70%;
+  }
   #hashtag {
     font-size: 0.75rem;
+  }
+  #middles-items-ccm {
+    font-size: 0.75rem;
+    box-shadow: 1px 1px 10px #000;
   }
   #contact-text {
     font-size: 2.75rem;
