@@ -1,36 +1,19 @@
 @font-face {
-  font-family: "Montserrat";
+  font-family: Noto Sans KR;
   font-weight: 400;
-  src: local("Montserrat"), url("https://fonts.googleapis.com/css?family=Montserrat");
+  src: url("../Noto-Sans-KR/NotoSansKR-Regular.OTF") format('opentype');
 }
 
 @font-face {
-  font-family: "Monoton";
+  font-family: Futura;
   font-weight: 400;
-  src: local("Merienda"), url("https://fonts.googleapis.com/css?family=Merienda");
-}
-
-@font-face {
-  font-family: "Merienda";
-  font-weight: 400;
-  src: local("Merienda"), url("https://fonts.googleapis.com/css?family=Merienda");
-}
-
-@font-face {
-  font-family: "Nanum Myeongjo";
-  font-weight: 400;
-  src: local("Nanum Myeongjo"), url("https://fonts.googleapis.com/css?family=Nanum Myeongjo");
-}
-
-@font-face {
-  font-family: Quantico, sans-serif;
-  font-weight: 400;
-  src: local("Quantico"), url("https://fonts.googleapis.com/css?family=Quantico:400,700i");
+  src: url("../fonts/Futura-Family/FUTURAM.TTF") format('truetype');
 }
 
 * {
   color: #270c17;
-  font-family: "Nanum Myeongjo"
+  font-family: Noto Sans KR;
+  font-weight: 300;
 }
 
 /* primary color */
@@ -104,16 +87,21 @@ body {
 }
 
 .about {
+  width: 50%;
+  background-color: white;
+  margin: -2rem auto 8rem auto;
   padding: 3rem 0 6rem 0;
   text-align: -moz-center;
   text-align: -webkit-center;
+  box-shadow: 1px 1px 3px #dbdbdb;
+  z-index: 999
 }
 
 .middles-moto-0 {
   display: flex;
   color: #000;
   font-size: 1.5rem;
-  width: 85%;
+  width: 65%;
   margin: 0 auto;
   padding: 3rem 0;
   background: url(../images/soundBoard.png) no-repeat;
@@ -147,7 +135,7 @@ body {
   font-size: 1.5rem;
   width: 70%;
   height: 300px;
-  margin: 4rem auto;
+  margin: 8rem auto;
   margin-bottom: 1.5rem;
   padding: 4rem 0;
   background: url(../images/ccm0.jpg) no-repeat;
@@ -180,10 +168,10 @@ body {
   max-width: 39rem;
   margin: auto;
   padding: 1rem 1rem;
-  -ms-text-shadow: -1px -1px 15px #000, 1px -1px 15px #000, -1px 1px 5px #000, 1px 1px 5px #000;
-  -webkit-text-shadow: -1px -1px 15px #000, 1px -1px 15px #000, -1px 1px 5px #000, 1px 1px 5px #000;
-  -moz-text-shadow: -1px -1px 15px #000, 1px -1px 15px #000, -1px 1px 5px #000, 1px 1px 5px #000;
-  text-shadow: -1px -1px 15px #000, 1px -1px 15px #000, -1px 1px 5px #000, 1px 1px 5px #000;
+  -ms-text-shadow: 1px 1px #000, 1px 1px #000, 1px 1px #000, 1px 1px #000;
+  -webkit-text-shadow: 1px 1px #000, 1px 1px #000, 1px 1px #000, 1px 1px #000;
+  -moz-text-shadow: 1px 1px #000, 1px 1px #000, 1px 1px #000, 1px 1px #000;
+  text-shadow: 1px 1px #000, 1px 1px #000, 1px 1px #000, 1px 1px #000;
 }
 
 .service {
@@ -250,7 +238,7 @@ body {
   justify-content: space-evenly;
   list-style: none;
   text-align: center;
-  margin: 5% 1% 5% 1%;
+  margin: 5rem 1% 5rem 1%;
   width: 100%;
 }
 
@@ -296,6 +284,7 @@ body {
 
 .ico {
   color: #fff;
+  font-family: futura;
   font-size: .75rem;
   min-width: 115px;
   margin-top: -10px;
@@ -321,9 +310,9 @@ body {
 }
 
 .t3 {
-  width: 70%;
+  width: 75%;
   color: #000;
-  font-size: .75rem;
+  font-size: .7rem;
   margin: auto;
   margin-top: .3rem;
   padding: 0;
@@ -335,10 +324,10 @@ body {
   #c9a47a; */
   flex-wrap: wrap;
   width: 85%;
-  margin: 2.5rem auto 3rem auto;
+  margin: 2.5rem auto 6rem auto;
   padding: 1.25rem 0;
   padding-bottom: 0.5rem;
-  background: url(../images/rainbow.jpg) no-repeat;
+  background: url(../images/gold.jpg) no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -354,8 +343,8 @@ body {
 }
 
 .cooperator-text {
-  color: #1c0912;
-  font-family: Futura, sans-serif;
+  color: #fff;
+  font-family: Futura;
   font-size: 1.75rem;
   font-weight: 300;
   width: fit-content;
@@ -363,8 +352,8 @@ body {
   margin-bottom: 0.5rem;
   padding: 0 1rem;
   text-transform: uppercase;
-  border-right: 1.5px solid #1c0912;
-  border-left: 1.5px solid #1c0912;
+  border-right: 1.5px solid #fff;
+  border-left: 1.5px solid #fff;
 }
 
 .cooperator-box {
@@ -410,7 +399,7 @@ body {
 }
 
 #event-email>a, #event-tel>a {
-  font-family: Futura, sans-serif;
+  font-family: Futura;
   display: inline-block;
   color: #000;
   font-size: 1.5rem;
@@ -427,7 +416,9 @@ body {
 
 .button {
   color: #000;
-  font-size: .7rem;
+  font-family: Futura;
+  font-size: .75rem;
+  font-weight: 100;
   text-transform: none;
   text-decoration: none;
   padding: 0 .5rem;
@@ -448,7 +439,7 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, .7);
+  background: rgba(0, 0, 0, .9);
   transition: opacity .5s;
   visibility: hidden;
   opacity: 0;
@@ -461,10 +452,11 @@ body {
 }
 
 .popup {
-  margin: 7rem auto;
-  padding: 1rem;
+  margin: auto;
+  margin-top: 20%;
+  padding: 0.5rem;
   background: #fff;
-  border-radius: 1px;
+  border-radius: 2px;
   width: 30%;
   position: relative;
   -webkit-transition: all .5s ease 0s;
@@ -488,20 +480,26 @@ body {
 }
 
 .popup .close:hover {
-  color: #fdddff;
+  color: #fd006d;
 }
 
 .popup .content {
+  font-family: Futura;
+  color: #fff;
+  background-color: #ffa3a3;
   max-height: 30%;
+  padding: 1rem;
   overflow: auto;
 }
 
 .content>div {
+  font-family: Futura;
+  color: #fff;
   margin-bottom: .5rem;
 }
 
 #to-the-top {
-  font-family: Futura, sans-serif;
+  font-family: Futura;
   font-weight: 400;
   font-size: 1.5rem;
   position: fixed;
@@ -531,10 +529,10 @@ body {
 #nav>li>a {
   display: inline-block;
   color: #fff;
-  font-family: Montserrat, sans-serif;
+  font-family: Futura;
   font-weight: 400;
-  font-size: 1rem;
-  min-width: 85.3px;
+  font-size: 1.1rem;
+  min-width: fit-content;
   text-transform: uppercase;
   text-decoration: none;
   -ms-text-shadow: 0 0 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 0 0 0 #000;
@@ -544,27 +542,16 @@ body {
 }
 
 #header-title-0 {
-  font-family: Monoton;
+  /* font-family: Monoton;
   font-size: 9rem;
-  color: #fff;
+  color: #fff; 
+  color: #5d90ca;*/
+  margin-bottom: 0.5rem;
   padding-top: 0;
   text-align: center;
   text-align: -ms-center;
   text-align: -moz-center;
   text-align: -webkit-center;
-}
-
-#header-title-0:nth-child(1) {
-  font-family: Monoton;
-  font-weight: 400;
-  font-size: 8rem;
-  margin: 0;
-  color: #5d90ca;
-  text-align: center;
-  text-align: -moz-center;
-  text-align: -webkit-center;
-  text-decoration: none;
-  /* mix-blend-mode: difference; */
 }
 
 #header-title-0>img {
@@ -579,7 +566,7 @@ body {
 }
 
 #header-sub-title-0 {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   font-weight: 800;
   text-transform: uppercase;
   width: 35rem;
@@ -593,15 +580,15 @@ body {
 }
 
 #header-sub-title-1 {
-  font-family: Merienda;
-  font-size: 1.25rem;
+  font-family: Futura;
+  font-size: 1.2rem;
   font-weight: 500;
   text-transform: uppercase;
   width: 35rem;
   color: #fff;
   background-color: transparent;
   border-radius: .3rem;
-  margin: .3rem auto;
+  margin: .5rem auto;
   text-align: center;
   text-align: -moz-center;
   text-align: -webkit-center;
@@ -609,7 +596,7 @@ body {
 
 #about-text {
   display: table;
-  font-family: Futura, sans-serif;
+  font-family: Futura;
   font-size: 2.5rem;
   font-weight: 400;
   color: #000;
@@ -623,14 +610,15 @@ body {
 
 #about-link {
   color: #299eb6;
-  font-size: 1.1rem;
+  font-family: Futura;
+  font-size: 1rem;
   font-weight: 400;
   text-decoration: none;
 }
 
 #about-introduce {
-  font-size: 1rem;
-  margin: 2.2rem 28%;
+  font-size: 0.85rem;
+  margin: 2.2rem 12%;
   margin-top: 2rem;
   text-align: center;
   text-align: -moz-center;
@@ -648,7 +636,7 @@ body {
 }
 
 #about-contact-button {
-  font-family: Montserrat, sans-serif;
+  font-family: Futura;
   font-size: 1rem;
   width: fit-content;
   border: 2px solid rgba(137, 137, 137, .5);
@@ -660,7 +648,7 @@ body {
 }
 
 #about-contact-button:nth-child(2) {
-  color: #c9a47a;
+  color: #299eb6
 }
 
 #about-contact-button:hover {
@@ -673,11 +661,13 @@ body {
 }
 
 #about-contact-button:nth-child(2):hover {
-  color: #d3007f
+  color: #fff;
+  background-color: #299eb6;
+  border-color: #299eb6;
 }
 
 #service-text {
-  font-family: Futura, sans-serif;
+  font-family: Futura;
   font-weight: 400;
   font-size: 3rem;
   color: #000;
@@ -699,7 +689,7 @@ body {
 }
 
 #service-text-1 {
-  /* font-family: Futura, sans-serif; */
+  /* font-family: Futura; */
   font-size: 1.5rem;
   font-weight: 600;
   color: #fff;
@@ -724,7 +714,7 @@ body {
 }
 
 #service-text-2 {
-  font-family: Montserrat, sans-serif;
+  font-family: Futura;
   font-size: 1.5rem;
   color: #fff;
   width: 360px;
@@ -739,7 +729,7 @@ body {
 }
 
 #service-text-highlight-0 {
-  /* font-family: Montserrat, sans-serif; */
+  font-family: Futura;
   color: #c9a47a;
   font-size: 1.5rem;
   font-weight: 400;
@@ -756,6 +746,7 @@ body {
 }
 
 #service-text-bottom {
+  font-family: Futura;
   color: #fff;
   margin: auto;
 }
@@ -770,7 +761,7 @@ body {
 }
 
 #more-info {
-  font-family: Montserrat, sans-serif;
+  font-family: Futura;
   font-size: 1rem;
   width: fit-content;
   padding: 0 25px;
@@ -789,45 +780,48 @@ body {
 }
 
 #service-text-highlight-1 {
-  font-family: Montserrat, sans-serif;
+  display: inherit;
   color: #4041aa;
-  font-size: 1.5rem;
-  font-weight: 400;
+  font-family: Futura;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-decoration: none;
+}
+
+#service-text-highlight-2 {
+  display: inherit;
+  color: #fff;
+  font-family: Futura;
+  font-size: 1.2rem;
+  font-weight: 600;
   text-decoration: none;
 }
 
 #service-text-description-2 {
-  width: 75%;
+  width: 80%;
   color: #fff;
-  font-size: 1rem;
+  font-size: 1.2rem;
+  font-weight: 900;
   margin: auto;
-  margin-top: 0.5rem;
   line-height: 2;
 }
 
 #middles-items-music {
-  font-family: Quantico, sans-serif;
+  font-family: Futura;
   font-size: 2rem;
-  -ms-box-shadow: 1px 1px 25px #000;
-  -webkit-box-shadow: 1px 1px 25px #000;
-  -moz-box-shadow: 1px 1px 25px #000;
-  box-shadow: 1px 1px 25px #000;
 }
 
 #hashtag {
-  font-family: Montserrat, sans-serif;
+  font-family: Futura;
   font-weight: 900;
 }
 
 #middles-items-ccm {
-  width: 60%;
-  font-size: 0.85rem;
+  width: 55%;
+  font-size: 0.95rem;
   padding: 2rem;
   line-height: 1.75;
-  -ms-box-shadow: 1px 1px 25px #000;
-  -webkit-box-shadow: 1px 1px 25px #000;
-  -moz-box-shadow: 1px 1px 25px #000;
-  box-shadow: 1px 1px 25px #000;
 }
 
 #ico0 {
@@ -861,7 +855,7 @@ body {
 }
 
 #contact-text {
-  font-family: Futura, sans-serif;
+  font-family: Futura;
   color: #5d90ca;
   font-size: 3.5rem;
   font-weight: 400;
@@ -880,8 +874,9 @@ body {
 }
 
 #credit {
+  font-family: Futura;
   font-size: 1.1rem;
-  color: #000;
+  color: #fff;
   text-transform: none;
   text-decoration: none;
   margin-top: 1rem;
@@ -898,10 +893,10 @@ body {
 @media (min-width:1920px) {
   .wrapper-logo {
     top: 45px;
-    left: 45px;
+    left: 35px;
   }
   .wrapper-logo>img {
-    width: 200px;
+    width: 280px;
   }
   .header {
     padding-top: 450px;
@@ -930,6 +925,10 @@ body {
     padding: 20rem 0;
     padding-top: 18rem;
   }
+  .popup {
+    width: 25%;
+    margin-top: 15%;
+  }
   #header-title-0:nth-child(1) {
     font-size: 10rem;
   }
@@ -940,10 +939,13 @@ body {
     font-size: 1.5rem;
   }
   #about-introduce {
-    margin: 2.2rem 33%;
+    margin: 2.2rem 20%;
   }
   #service-text-1 {
     max-width: 50rem;
+  }
+  #service-text-description-1 {
+    width: 45%;
   }
   #service-text-2 {
     max-width: 50rem;
@@ -954,8 +956,19 @@ body {
 }
 
 @media (max-width:1024px) {
+  .wrapper-logo {
+    margin: auto;
+    left: 30px;
+    top: 60px;
+  }
+  .wrapper-logo>img {
+    width: 150px;
+  }
   .header {
     background-attachment: local;
+  }
+  .about {
+    width: 60%;
   }
   .contact {
     background-attachment: local;
@@ -968,14 +981,6 @@ body {
     width: 95%;
     background-attachment: local;
     margin-top: 2.5rem;
-  }
-  .wrapper-logo {
-    margin: auto;
-    left: 30px;
-    top: 50px;
-  }
-  .wrapper-logo img {
-    width: 125px;
   }
   .header {
     padding-top: 400px;
@@ -1065,25 +1070,33 @@ body {
   }
   .popup {
     width: 50%;
+    margin-top: 20%;
   }
   #nav {
     width: 90%;
   }
+  #header-title-0 {
+    margin-bottom: 0;
+  }
   #header-title-0:nth-child(1) {
     font-size: 6rem;
   }
+  #header-title-0>img {
+    width: 60%;
+  }
   #header-sub-title-0 {
-    font-size: .7rem;
+    font-size: .95rem;
     width: fit-content;
   }
   #header-sub-title-1 {
-    font-size: .7rem;
+    font-size: .95rem;
     width: fit-content;
   }
   #about-text {
     font-size: 2rem;
   }
   #about-introduce {
+    font-size: 0.8rem;
     margin: 1rem 10%;
     margin-bottom: 2rem;
   }
@@ -1138,24 +1151,45 @@ body {
   }
 }
 
+@media (max-width:768px) {
+  .wrapper-logo {
+    left: 15px;
+    top: 60px;
+  }
+  .wrapper-logo img {
+    width: 160px;
+  }
+  .about {
+    width: 75%;
+  }
+  .popup {
+    margin-top: 40%
+  }
+  #header-title-0>img {
+    width: 65%;
+  }
+}
+
 @media (max-width:550px) {
   .wrapper {
     padding: 0.5rem 0;
     opacity: 1;
   }
   .wrapper-logo {
-    left: 10px;
-    top: 45px;
+    left: 15px;
+    top: 50px;
   }
   .wrapper-logo img {
-    width: 75px;
+    width: 100px;
   }
   .header {
     padding-top: 300px;
     padding-bottom: 250px;
   }
   .about {
-    padding: 2rem 0 5rem 0;
+    width: 90%;
+    margin-bottom: 2rem;
+    padding: 3rem 0 5rem 0;
   }
   .service-banner {
     height: 375px;
@@ -1166,6 +1200,7 @@ body {
     background-attachment: local;
   }
   .service {
+    padding-top: 3rem;
     background-attachment: fixed;
   }
   .service-group {
@@ -1177,11 +1212,24 @@ body {
   .service-list {
     padding: 0;
   }
+  .grid-item:nth-of-type(1) {
+    margin-bottom: 2rem;
+  }
+  .grid-item:nth-of-type(2) {
+    margin-bottom: 2rem;
+  }
+  .grid-item:nth-of-type(3) {
+    margin-bottom: 2rem;
+  }
+  .grid-item:nth-of-type(4) {
+    margin-bottom: 2rem;
+  }
   .middles-moto-0 {
     font-size: .7rem;
-    width: 99.5%;
+    width: 100%;
     margin: auto;
-    padding: 0.75rem 0;
+    padding: 1rem 0;
+    border-radius: 0;
     -ms-box-shadow: 3px 3px 3px #dbdbdb;
     -webkit-box-shadow: 3px 3px 3px #dbdbdb;
     -moz-box-shadow: 3px 3px 3px #dbdbdb;
@@ -1199,6 +1247,7 @@ body {
     box-shadow: 1px 1px 10px #dbdbdb;
   }
   .t3 {
+    font-size: 0.65rem;
     width: 100%;
   }
   .cooperator {
@@ -1221,12 +1270,17 @@ body {
     padding: 183.5px 0;
   }
   .footer {
-    width: 90%;
+    width: 100%;
+    line-height: 0.9;
+  }
+  .button {
+    font-size: .6rem;
+    padding: 0;
   }
   .popup {
     width: 90%;
-    margin: 5rem auto;
-    margin-top: 14rem;
+    margin: auto;
+    margin-top: 11rem;
   }
   #nav {
     width: 88%;
@@ -1279,17 +1333,16 @@ body {
     height: 250px;
   }
   #service-text-description-1 {
+    width: 80%;
+  }
+  #middles-items-ccm {
     width: 70%;
   }
   #hashtag {
-    font-size: 0.75rem;
+    font-size: 0.9rem;
   }
   #middles-items-ccm {
     font-size: 0.75rem;
-    -ms-box-shadow: 1px 1px 10px #000;
-    -webkit-box-shadow: 1px 1px 10px #000;
-    -moz-box-shadow: 1px 1px 10px #000;
-    box-shadow: 1px 1px 10px #000;
   }
   #contact-text {
     font-size: 2.75rem;
