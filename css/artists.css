@@ -18,7 +18,7 @@
 
 /* primary color */
 
-/* #c9a47a #7ac7c9 #270c17 #7d7ac9 #fe4365 */
+/* #c9a47a #299eb6 #4041aa */
 
 body {
   background-repeat: no-repeat;
@@ -320,7 +320,7 @@ body {
 }
 
 .cooperator {
-  /* background-color: #7d7ac9 #b8efe4
+  /* background-color: #4041aa #b8efe4
   #c9a47a; */
   flex-wrap: wrap;
   width: 85%;
@@ -329,7 +329,7 @@ body {
   padding-bottom: 0.5rem;
   background: url(../images/gold.jpg) no-repeat;
   background-size: cover;
-  background-attachment: local;
+  background-attachment: fixed;
   background-position: center;
   align-items: flex-start;
   justify-content: space-evenly;
@@ -605,11 +605,11 @@ body {
   padding: 0;
   text-align: center;
   text-transform: uppercase;
-  border-bottom: 5px solid #7ac7c9;
+  border-bottom: 5px solid #299eb6;
 }
 
 #about-link {
-  color: #7ac7c9;
+  color: #299eb6;
   font-family: Futura;
   font-size: 1rem;
   font-weight: 400;
@@ -648,7 +648,7 @@ body {
 }
 
 #about-contact-button:nth-child(2) {
-  color: #7ac7c9
+  color: #299eb6
 }
 
 #about-contact-button:hover {
@@ -662,8 +662,8 @@ body {
 
 #about-contact-button:nth-child(2):hover {
   color: #fff;
-  background-color: #7ac7c9;
-  border-color: #7ac7c9;
+  background-color: #299eb6;
+  border-color: #299eb6;
 }
 
 #service-text {
@@ -723,7 +723,7 @@ body {
   padding: 2rem;
   text-align: center;
   line-height: 1.9;
-  border: 3px solid #7d7ac9;
+  border: 3px solid #4041aa;
   border-radius: 1000px;
   justify-content: flex-end;
 }
@@ -781,7 +781,7 @@ body {
 
 #service-text-highlight-1 {
   display: inherit;
-  color: #7d7ac9;
+  color: #4041aa;
   font-family: Futura;
   font-size: 1.2rem;
   font-weight: 600;
@@ -864,7 +864,7 @@ body {
   margin: 3rem 0;
   margin-bottom: 2rem;
   text-transform: uppercase;
-  border-bottom: 5px solid #7d7ac9;
+  border-bottom: 5px solid #4041aa;
   mix-blend-mode: difference;
   -webkit-animation: color-change 30s infinite;
   -moz-animation: color-change 30s infinite;
